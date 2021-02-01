@@ -1,0 +1,62 @@
+﻿.Title {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+.tablink {
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    text-decoration: none;
+}
+
+    .tablink:hover {
+        background-color: mediumpurple;
+        color: white;
+        text-decoration: none;
+    }
+
+.tabActive {
+    background-color: mediumpurple;
+    color: white;
+    text-decoration: none;
+}
+
+    .tabActive:visited {
+        background-color: mediumpurple;
+        color: white;
+        text-decoration: none;
+    }
+
+    .tabActive:link {
+        text-decoration: none;
+    }
+
+.homeActive {
+    color: white;
+    text-decoration: none;
+}
+
+    .homeActive:visited {
+        color: white;
+        text-decoration: none;
+    }
+
+    .homeActive:link {
+        text-decoration: none;
+    }
+
+    

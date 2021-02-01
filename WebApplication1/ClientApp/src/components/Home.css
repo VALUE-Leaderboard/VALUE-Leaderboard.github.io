@@ -1,0 +1,21 @@
+﻿.container
+{
+    font-size: 1.5em;
+}
+
+.header
+{
+    text-align: center;
+    color: cornflowerblue;
+}
+
+.sponsors
+{
+    padding-bottom: 3em;
+    padding-top: 3em;
+}
+
+.home_text
+{
+    padding-left: 3em;
+}
