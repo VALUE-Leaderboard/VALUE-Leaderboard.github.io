@@ -1,5 +1,6 @@
 export const LEADERBOARD_MODEL = [
     {
+        date: "1st January 2020",
         model: "m1",
         task1: 100,
         task2: 80,
@@ -9,6 +10,7 @@ export const LEADERBOARD_MODEL = [
         task6: "-"
     },
     {
+        date: "2nd May 2020",
         model: "m2",
         task1: 50,
         task2: 80,
@@ -18,6 +20,7 @@ export const LEADERBOARD_MODEL = [
         task6: 83
     },
     {
+        date: "3rd February 2021",
         model: "m3",
         task1: 80,
         task2: "-",

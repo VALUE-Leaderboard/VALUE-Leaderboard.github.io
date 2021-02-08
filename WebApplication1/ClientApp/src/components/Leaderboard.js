@@ -17,7 +17,7 @@ export class Leaderboard extends Component{
     }
 
     componentDidMount() {
-        //this.sortBy(this.state.lastCol);
+        this.sortBy("date");
     }
 
     compareBy(key, direction) {
@@ -64,7 +64,7 @@ export class Leaderboard extends Component{
         this.setState({ data: arrayCopy });
     }
 
-    buildTableRow = (model, task1, task2, task3, task4, task5, task6) => {
+    buildTableRow = (date, model, task1, task2, task3, task4, task5, task6) => {
 
         var t1, t2, t3, t4, t5, t6, t12_avg_metric, t34_avg_metric, t56_avg_metric;
         if (task1 === "-") {
@@ -117,6 +117,7 @@ export class Leaderboard extends Component{
 
         return (
             <tr>
+                <td> {date} </td>
                 <td> {model} </td>
                 <td> {task1} </td>
                 <td> {task2}</td>
@@ -132,14 +133,15 @@ export class Leaderboard extends Component{
     }
 
     render() {
-        const rows = this.state.data.map((item) => this.buildTableRow(item.model, item.task1, item.task2, item.task3, item.task4, item.task5, item.task6));
+        const rows = this.state.data.map((item) => this.buildTableRow(item.date, item.model, item.task1, item.task2, item.task3, item.task4, item.task5, item.task6));
         return (
             <div>
                 <div class="container">
                     <h1> Leaderboard </h1>
                     <table id="leaderboard">
                         <tr>
-                            <th> modelName </th>
+                            <th onClick={() => this.sortBy('date')}> Date Submitted </th>
+                            <th> Model </th>
                             <th onClick={() => this.sortBy('task1')}> Task1</th>
                             <th onClick={() => this.sortBy('task2')}> Task2 </th>
                             <th onClick={() => this.sortBy('t12_avg_metric')}> TaskTypeMetric1 </th>
