@@ -1,5 +1,5 @@
 export const TASK_MODEL = [
-    {
+    /* {
         name: "TVQA",
         download: "https://github.com/linjieli222/VALUE", 
         metric: "Accuracy"
@@ -33,5 +33,20 @@ export const TASK_MODEL = [
         name: "HowQA",
         download: "https://github.com/linjieli222/VALUE",
         metric: "Accuracy"
+    } */
+    {
+        name: "Task1", 
+        download: "",
+        metric: "Accuracy"
+    },
+    {
+        name: "Task2",
+        download: "",
+        metric: "Precision"
+    },
+    {
+        name: "Task3",
+        download: "",
+        metric: "ROUGE-L"
     }
 ]
