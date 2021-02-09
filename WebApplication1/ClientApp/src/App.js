@@ -13,12 +13,12 @@ export default class App extends Component {
     return (
         <div className="App">
             <header className="Title">
-                <NavLink to={"/ValueLeaderboard"} className="tablink" activeClassName="homeActive">Home</NavLink>
+                <NavLink to={"/"} className="tablink" activeClassName="homeActive">Home</NavLink>
                 <NavLink to={"/code"} className="tablink" activeClassName="tabActive">Code</NavLink>
                 <NavLink to={"/tasks"} className="tablink" activeClassName="tabActive">Tasks</NavLink>
                 <NavLink to={"/leaderboard"} className="tablink" activeClassName="tabActive">Leaderboard</NavLink>
             </header>
-            <Route exact path='/ValueLeaderboard' component={Home} />
+            <Route exact path='/' component={Home} />
             <Route path='/tasks' component={Tasks} />
             <Route path='/code' component={FetchData} />
             <Route path='/leaderboard' component={Leaderboard} />
