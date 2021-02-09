@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Route, NavLink, Link } from "react-router-dom";
-import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { Leaderboard } from './components/Leaderboard';
 import { FetchData } from './components/FetchData';
