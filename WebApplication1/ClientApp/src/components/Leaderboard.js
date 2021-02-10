@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { LEADERBOARD_MODEL, METRIC_MAPS } from './LeaderboardModel';
-import './Leaderboard.css'
+import './Tables.css'
 
 export class Leaderboard extends Component{
 
@@ -138,21 +138,25 @@ export class Leaderboard extends Component{
             <div>
                 <div class="container">
                     <h1> Leaderboard </h1>
-                    <table id="leaderboard">
-                        <tr>
-                            <th onClick={() => this.sortBy('date')}> Date Submitted </th>
-                            <th> Model </th>
-                            <th onClick={() => this.sortBy('task1')}> Task1</th>
-                            <th onClick={() => this.sortBy('task2')}> Task2 </th>
-                            <th onClick={() => this.sortBy('t12_avg_metric')}> TaskTypeMetric1 </th>
-                            <th onClick={() => this.sortBy('task3')}> Task3</th>
-                            <th onClick={() => this.sortBy('task4')}> Task4 </th>
-                            <th onClick={() => this.sortBy('t34_avg_metric')}> TaskTypeMetric2 </th>
-                            <th onClick={() => this.sortBy('task5')}> Task5</th>
-                            <th onClick={() => this.sortBy('task6')}> Task6 </th>
-                            <th onClick={() => this.sortBy('t56_avg_metric')}> TaskTypeMetric3 </th>
-                        </tr>
-                        {rows}
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th onClick={() => this.sortBy('date')}> Date Submitted </th>
+                                <th> Model </th>
+                                <th onClick={() => this.sortBy('task1')}> Task1</th>
+                                <th onClick={() => this.sortBy('task2')}> Task2 </th>
+                                <th onClick={() => this.sortBy('t12_avg_metric')}> TaskTypeMetric1 </th>
+                                <th onClick={() => this.sortBy('task3')}> Task3</th>
+                                <th onClick={() => this.sortBy('task4')}> Task4 </th>
+                                <th onClick={() => this.sortBy('t34_avg_metric')}> TaskTypeMetric2 </th>
+                                <th onClick={() => this.sortBy('task5')}> Task5</th>
+                                <th onClick={() => this.sortBy('task6')}> Task6 </th>
+                                <th onClick={() => this.sortBy('t56_avg_metric')}> TaskTypeMetric3 </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {rows}
+                        </tbody>
                     </table>
                 </div>
             </div>

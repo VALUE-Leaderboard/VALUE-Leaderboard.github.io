@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { TASK_MODEL } from './TaskModel';
 import { Download, BoxArrowDown } from 'react-bootstrap-icons';
-import './tasks.css'
+import './Tasks.css'
 
 export class Tasks extends Component {
     displayName = Tasks.name
@@ -22,14 +22,18 @@ export class Tasks extends Component {
     return (
         <div class="container">
             <h1>VALUE Tasks</h1>
-            <table id="tasks"> 
-                <tr>
-                    <th> Task Name</th>
-                    <th> Download </th>
-                    <th> Baseline </th>
-                    <th> Metric </th>
-                </tr>
-                {TASK_MODEL.map((item) => this.buildWrapper(item.name, item.download, item.metric, item.code))}
+            <table id="tasks">
+                <thead>
+                    <tr>
+                        <th> Task Name</th>
+                        <th> Download </th>
+                        <th> Baseline </th>
+                        <th> Metric </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {TASK_MODEL.map((item) => this.buildWrapper(item.name, item.download, item.metric, item.code))}
+                </tbody>
                 </table>
         </div>
     );
