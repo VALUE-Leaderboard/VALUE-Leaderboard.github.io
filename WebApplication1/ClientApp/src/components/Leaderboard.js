@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { LEADERBOARD_MODEL, METRIC_MAPS } from './LeaderboardModel';
+import { SortUp, SortDown } from 'react-bootstrap-icons';
 import './Tables.css'
 
 export class Leaderboard extends Component{
@@ -9,7 +10,7 @@ export class Leaderboard extends Component{
         this.state = {
             data: LEADERBOARD_MODEL,
             direction: -1,
-            lastCol: "t12_avg_metric",
+            lastCol: "date",
         };
 
         this.sortBy.bind(this);
@@ -132,8 +133,36 @@ export class Leaderboard extends Component{
         );
     }
 
+    buildIcon = (col) => {
+        if (col !== this.state.lastCol) {
+            return (null);
+        }
+        else {
+            if (this.state.direction === -1) {
+                return (
+                    <SortDown />
+                );
+            }
+            else {
+                return (
+                    <SortUp />  
+                );
+            }
+        }
+    }
+
     render() {
         const rows = this.state.data.map((item) => this.buildTableRow(item.date, item.model, item.task1, item.task2, item.task3, item.task4, item.task5, item.task6));
+        var date = this.buildIcon("date");
+        var t1 = this.buildIcon("task1");
+        var t2 = this.buildIcon("task2");
+        var t3 = this.buildIcon("task3");
+        var t4 = this.buildIcon("task4");
+        var t5 = this.buildIcon("task5");
+        var t6 = this.buildIcon("task6");
+        var t12_avg = this.buildIcon("t12_avg_metric");
+        var t34_avg = this.buildIcon("t34_avg_metric");
+        var t56_avg = this.buildIcon("t56_avg_metric");
         return (
             <div>
                 <div class="container">
@@ -141,17 +170,17 @@ export class Leaderboard extends Component{
                     <table class="styled-table">
                         <thead>
                             <tr>
-                                <th onClick={() => this.sortBy('date')}> Date Submitted </th>
+                                <th onClick={() => this.sortBy('date')}> Date Submitted {date} </th>
                                 <th> Model </th>
-                                <th onClick={() => this.sortBy('task1')}> Task1</th>
-                                <th onClick={() => this.sortBy('task2')}> Task2 </th>
-                                <th onClick={() => this.sortBy('t12_avg_metric')}> TaskTypeMetric1 </th>
-                                <th onClick={() => this.sortBy('task3')}> Task3</th>
-                                <th onClick={() => this.sortBy('task4')}> Task4 </th>
-                                <th onClick={() => this.sortBy('t34_avg_metric')}> TaskTypeMetric2 </th>
-                                <th onClick={() => this.sortBy('task5')}> Task5</th>
-                                <th onClick={() => this.sortBy('task6')}> Task6 </th>
-                                <th onClick={() => this.sortBy('t56_avg_metric')}> TaskTypeMetric3 </th>
+                                <th onClick={() => this.sortBy('task1')}> Task1 {t1} </th>
+                                <th onClick={() => this.sortBy('task2')}> Task2 {t2}</th>
+                                <th onClick={() => this.sortBy('t12_avg_metric')}> TaskTypeMetric1 {t12_avg} </th>
+                                <th onClick={() => this.sortBy('task3')}> Task3 {t3}</th>
+                                <th onClick={() => this.sortBy('task4')}> Task4 {t4}</th>
+                                <th onClick={() => this.sortBy('t34_avg_metric')}> TaskTypeMetric2 {t34_avg}</th>
+                                <th onClick={() => this.sortBy('task5')}> Task5 {t5}</th>
+                                <th onClick={() => this.sortBy('task6')}> Task6 {t6}</th>
+                                <th onClick={() => this.sortBy('t56_avg_metric')}> TaskTypeMetric3 {t56_avg}</th>
                             </tr>
                         </thead>
                         <tbody>
