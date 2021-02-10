@@ -4,7 +4,12 @@
     border-collapse: collapse;
     width: 100%;
     margin: 25px 0;
+    border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#tasks thead {
+    border-radius: 20px;
 }
 
 #tasks td, #tasks th {

@@ -1,6 +1,6 @@
 ﻿.styled-table {
     border-collapse: collapse;
-    border-radius: 100px;
+    border-radius: 20px;
     margin: 25px 0;
     font-size: 0.9em;
     font-family: sans-serif;
@@ -12,6 +12,7 @@
         background-color: #D1D646;
         color: #ffffff;
         text-align: center;
+        border-radius: 20px;
     }
 
     .styled-table tbody tr {
