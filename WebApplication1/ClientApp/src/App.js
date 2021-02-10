@@ -12,7 +12,7 @@ export default class App extends Component {
     return (
         <div className="App">
             <header className="Title">
-                <NavLink to={"/"} className="tablink" activeClassName="homeActive">Home</NavLink>
+                <NavLink exact to={"/"} className="tablink" activeClassName="tabActive">Home</NavLink>
                 <NavLink to={"/tasks"} className="tablink" activeClassName="tabActive">Tasks</NavLink>
                 <NavLink to={"/leaderboard"} className="tablink" activeClassName="tabActive">Leaderboard</NavLink>
             </header>

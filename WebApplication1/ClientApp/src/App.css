@@ -6,12 +6,12 @@
     align-items: baseline;
     padding: 1em;
     margin-bottom: 2em;
-    background-color: dodgerblue;
+    background-color: #9381FF;
     color: #fff;
 }
 
 .tablink {
-    background-color: dodgerblue;
+    background-color: #9381FF;
     color: white;
     text-align: center;
     border: none;
@@ -24,38 +24,24 @@
 }
 
     .tablink:hover {
-        background-color: mediumpurple;
+        background-color: #FF958C;
         color: white;
         text-decoration: none;
     }
 
 .tabActive {
-    background-color: mediumpurple;
+    background-color: #FF958C;
     color: white;
     text-decoration: none;
 }
 
     .tabActive:visited {
-        background-color: mediumpurple;
+        background-color: #FF958C;
         color: white;
         text-decoration: none;
     }
 
     .tabActive:link {
-        text-decoration: none;
-    }
-
-.homeActive {
-    color: white;
-    text-decoration: none;
-}
-
-    .homeActive:visited {
-        color: white;
-        text-decoration: none;
-    }
-
-    .homeActive:link {
         text-decoration: none;
     }
 
