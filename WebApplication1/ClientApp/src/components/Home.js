@@ -12,9 +12,6 @@ export class Home extends Component {
                     <h1 class="header">VALUE Leaderboard</h1>
                     <div class="row sponsors">
                         <div class="col-md-6 col-md-offset-3">
-                            <a aria-label="Microsoft" href="https://aka.ms/mmai" target="_blank">
-                                <img role="presentation" aria-hidden="true" alt="" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" />
-                            </a>
                         </div>
                     </div>
                     <div class="home_text">
@@ -32,3 +29,7 @@ export class Home extends Component {
     );
   }
 }
+
+/* <a aria-label="Microsoft" href="https://aka.ms/mmai" target="_blank">
+    <img role="presentation" aria-hidden="true" alt="" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" />
+</a> */
