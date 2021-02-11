@@ -1,0 +1,29 @@
+﻿.parent {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+    padding: 1%;
+}
+
+.imgDiv {
+    text-align: center;
+}
+
+.nameText {
+    text-align: center;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.profileDescriptionImg {
+    height: 10em;
+    width: 10em;
+    margin-bottom: 1em;
+    object-position: top;
+    object-fit: cover;
+    border-radius: 50%;
+}
