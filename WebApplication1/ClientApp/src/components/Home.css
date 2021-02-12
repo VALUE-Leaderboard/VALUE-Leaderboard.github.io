@@ -1,12 +1,13 @@
 ﻿.container
 {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .header
 {
     text-align: center;
     color: cornflowerblue;
+    padding-bottom: 10px;
 }
 
 .sponsors
