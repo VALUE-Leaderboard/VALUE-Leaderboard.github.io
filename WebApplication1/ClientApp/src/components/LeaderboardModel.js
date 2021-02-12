@@ -1,39 +1,35 @@
 export const LEADERBOARD_MODEL = [
     {
-        date: "1st January 2020",
-        model: "m1",
-        task1: 100,
-        task2: 80,
-        task3: "-",
-        task4: "-",
-        task5: 70,
-        task6: "-"
+        date: "12th February 2021",
+        model: "Hero (No Pretraining)",
+        tvr: 18.42,
+        how2r: 15.65,
+        youcook2r: "-",
+        tvqa: 70.65,
+        how2qa: 71.36,
+        violin: 65.72,
+        vlep: "-", 
+        tvc: 32.72,
+        youcook2c: "-"
     },
     {
-        date: "2nd May 2020",
-        model: "m2",
-        task1: 50,
-        task2: 80,
-        task3: 2,
-        task4: 25,
-        task5: 70,
-        task6: 83
-    },
-    {
-        date: "3rd February 2021",
-        model: "m3",
-        task1: 80,
-        task2: "-",
-        task3: "-",
-        task4: "-",
-        task5: 90,
-        task6: "-"
+        date: "12th February 2021",
+        model: "Hero (Pretrained)",
+        tvr: 36.66,
+        how2r: 21.06,
+        youcook2r: "-",
+        tvqa: 73.61,
+        how2qa: 73.81,
+        violin: 68.59,
+        vlep: "-",
+        tvc: 34.16,
+        youcook2c: "-"
     },
 ]
 
 export const METRIC_MAPS = {
-    "t12_avg_metric": ["task1", "task2"],
-    "t34_avg_metric": ["task3", "task4"],
-    "t56_avg_metric": ["task5", "task6"],
+    "cap_avg_metric": ["tvc", "youcook2c"],
+    "qa_avg_metric": ["tvqa", "how2qa", "violin", "vlep"],
+    "ret_avg_metric": ["tvr", "how2r", "youcook2r"],
 }
 

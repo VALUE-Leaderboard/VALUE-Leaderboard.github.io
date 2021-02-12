@@ -54,81 +54,110 @@ export class Leaderboard extends Component{
     }
 
     sortBy(key) {
+        var newDirection = -1;
         if (key !== this.state.lastCol) {
             this.setState({ direction: -1, lastCol: key })
         }
         else {
             this.setState({ direction: -1 * this.state.direction })
+            newDirection = -1 * this.state.direction;
         }
         let arrayCopy = [...this.state.data];
-        arrayCopy.sort(this.compareBy(key, this.state.direction));
+        arrayCopy.sort(this.compareBy(key, newDirection));
         this.setState({ data: arrayCopy });
     }
 
-    buildTableRow = (date, model, task1, task2, task3, task4, task5, task6) => {
+    buildTableRow = (date, model, TVR, How2R, YouCook2R, TVQA, How2QA, VIOLIN, VLEP, TVC, YouCook2C) => {
 
-        var t1, t2, t3, t4, t5, t6, t12_avg_metric, t34_avg_metric, t56_avg_metric;
-        if (task1 === "-") {
+        var t1, t2, t3, t4, t5, t6, t7, t8, t9, ret_avg_metric, qa_avg_metric, cap_avg_metric;
+        if (TVR === "-") {
             t1 = 0;
         }
         else {
-            t1 = task1;
+            t1 = TVR;
         }
 
-        if (task2 === "-") {
+        if (How2R === "-") {
             t2 = 0;
         }
         else {
-            t2 = task2;
+            t2 = How2R;
         }
 
-        t12_avg_metric = (t1 + t2) / 2;
-
-        if (task3 === "-") {
+        if (YouCook2R === "-") {
             t3 = 0;
         }
         else {
-            t3 = task3;
+            t3 = YouCook2R;
         }
 
-        if (task4 === "-") {
+        ret_avg_metric = (t1 + t2 + t3) / 3;
+        ret_avg_metric = ret_avg_metric.toFixed(2);
+
+        if (TVQA === "-") {
             t4 = 0;
         }
         else {
-            t4 = task4;
+            t4 = TVQA;
         }
 
-        t34_avg_metric = (t3 + t4) / 2;
-
-        if (task5 === "-") {
+        if (How2QA === "-") {
             t5 = 0;
         }
         else {
-            t5 = task5;
+            t5 = How2QA;
         }
 
-        if (task6 === "-") {
+        if (VIOLIN === "-") {
             t6 = 0;
         }
         else {
-            t6 = task6;
+            t6 = VIOLIN;
         }
 
-        t56_avg_metric = (t5 + t6) / 2;
+        if (VLEP === "-") {
+            t7 = 0;
+        }
+        else {
+            t7 = VLEP;
+        }
+
+        qa_avg_metric = (t4 + t5 + t6 + t7) / 4;
+        qa_avg_metric = qa_avg_metric.toFixed(2);
+
+        if (TVC === "-") {
+            t8 = 0;
+        }
+        else {
+            t8 = TVC;
+        }
+
+        if (YouCook2C === "-") {
+            t9 = 0;
+        }
+        else {
+            t9 = YouCook2C;
+        }
+
+        cap_avg_metric = (t8 + t9) / 2;
+        cap_avg_metric = cap_avg_metric.toFixed(2);
 
         return (
             <tr>
                 <td> {date} </td>
                 <td> {model} </td>
-                <td> {task1} </td>
-                <td> {task2}</td>
-                <td> {t12_avg_metric} </td>
-                <td> {task3} </td>
-                <td> {task4}</td>
-                <td> {t34_avg_metric} </td>
-                <td> {task5} </td>
-                <td> {task6}</td>
-                <td> {t56_avg_metric} </td>
+                <td> {TVR} </td>
+                <td> {How2R} </td>
+                <td> {YouCook2R}</td>
+                <td> {ret_avg_metric} </td>
+                <td> {TVQA} </td>
+                <td> {How2QA}</td>
+                <td> {VIOLIN}</td>
+                <td> {VLEP}</td>
+                <td> {qa_avg_metric} </td>
+                <td> {TVC} </td>
+                <td> {YouCook2C}</td>
+                <td> {cap_avg_metric} </td>
             </tr>
         );
     }
@@ -142,29 +171,32 @@ export class Leaderboard extends Component{
         else {
             if (this.state.direction === -1) {
                 return (
-                    <SortDown />
+                    <SortUp />
                 );
             }
             else {
                 return (
-                    <SortUp />  
+                    <SortDown />  
                 );
             }
         }
     }
 
     render() {
-        const rows = this.state.data.map((item) => this.buildTableRow(item.date, item.model, item.task1, item.task2, item.task3, item.task4, item.task5, item.task6));
+        const rows = this.state.data.map((item) => this.buildTableRow(item.date, item.model, item.tvr, item.how2r, item.youcook2r, item.tvqa, item.how2qa, item.violin, item.vlep, item.tvc, item.youcook2c));
         var date = this.buildIcon("date");
-        var t1 = this.buildIcon("task1");
-        var t2 = this.buildIcon("task2");
-        var t3 = this.buildIcon("task3");
-        var t4 = this.buildIcon("task4");
-        var t5 = this.buildIcon("task5");
-        var t6 = this.buildIcon("task6");
-        var t12_avg = this.buildIcon("t12_avg_metric");
-        var t34_avg = this.buildIcon("t34_avg_metric");
-        var t56_avg = this.buildIcon("t56_avg_metric");
+        var t1 = this.buildIcon("tvr");
+        var t2 = this.buildIcon("how2r");
+        var t3 = this.buildIcon("youcook2r");
+        var t4 = this.buildIcon("tvqa");
+        var t5 = this.buildIcon("how2qa");
+        var t6 = this.buildIcon("violin");
+        var t7 = this.buildIcon("vlep");
+        var t8 = this.buildIcon("tvc");
+        var t9 = this.buildIcon("youcook2c");
+        var ret_avg = this.buildIcon("ret_avg_metric");
+        var qa_avg = this.buildIcon("qa_avg_metric");
+        var cap_avg = this.buildIcon("cap_avg_metric");
         return (
             <div>
                 <div class="container">
@@ -174,15 +206,18 @@ export class Leaderboard extends Component{
                             <tr>
                                 <th onClick={() => this.sortBy('date')}> Date Submitted {date} </th>
                                 <th> Model </th>
-                                <th onClick={() => this.sortBy('task1')}> Task1 {t1} </th>
-                                <th onClick={() => this.sortBy('task2')}> Task2 {t2}</th>
-                                <th onClick={() => this.sortBy('t12_avg_metric')}> TaskTypeMetric1 {t12_avg} </th>
-                                <th onClick={() => this.sortBy('task3')}> Task3 {t3}</th>
-                                <th onClick={() => this.sortBy('task4')}> Task4 {t4}</th>
-                                <th onClick={() => this.sortBy('t34_avg_metric')}> TaskTypeMetric2 {t34_avg}</th>
-                                <th onClick={() => this.sortBy('task5')}> Task5 {t5}</th>
-                                <th onClick={() => this.sortBy('task6')}> Task6 {t6}</th>
-                                <th onClick={() => this.sortBy('t56_avg_metric')}> TaskTypeMetric3 {t56_avg}</th>
+                                <th onClick={() => this.sortBy('tvr')}> TVR {t1} </th>
+                                <th onClick={() => this.sortBy('how2r')}> How2R {t2}</th>
+                                <th onClick={() => this.sortBy('youcook2r')}> YouCook2R {t3}</th>
+                                <th onClick={() => this.sortBy('ret_avg_metric')}> Retrieval Average {ret_avg} </th>
+                                <th onClick={() => this.sortBy('tvqa')}> TVQA {t4}</th>
+                                <th onClick={() => this.sortBy('how2qa')}> How2QA {t5}</th>
+                                <th onClick={() => this.sortBy('violin')}> VIOLIN {t6}</th>
+                                <th onClick={() => this.sortBy('vlep')}> VLEP {t7}</th>
+                                <th onClick={() => this.sortBy('qa_avg_metric')}> QA Average {qa_avg}</th>
+                                <th onClick={() => this.sortBy('tvc')}> TVC {t8}</th>
+                                <th onClick={() => this.sortBy('youcook2c')}> YouCook2C {t9}</th>
+                                <th onClick={() => this.sortBy('cap_avg_metric')}> Captioning Average {cap_avg}</th>
                             </tr>
                         </thead>
                         <tbody>
