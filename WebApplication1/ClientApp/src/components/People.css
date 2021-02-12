@@ -14,14 +14,14 @@
 .nameText {
     text-align: center;
     color: black;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: bold;
     opacity: 1;
 }
 
 .profileDescriptionImg {
-    height: 10em;
-    width: 10em;
+    height: 7em;
+    width: 7em;
     margin-bottom: 1em;
     object-position: top;
     object-fit: cover;
