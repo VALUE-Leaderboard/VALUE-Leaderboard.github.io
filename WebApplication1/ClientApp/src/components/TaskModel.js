@@ -1,10 +1,4 @@
-export const TASK_MODEL = [
-    {
-        name: "TVQA",
-        download: "https://github.com/linjieli222/VALUE", 
-        code: "https://github.com/linjieli222/HERO",
-        metric: "Accuracy"
-    },
+export const RETRIEVAL_MODEL = [
     {
         name: "TVR",
         download: "https://github.com/linjieli222/VALUE",
@@ -12,10 +6,25 @@ export const TASK_MODEL = [
         metric: "Recall"
     },
     {
-        name: "TVC",
+        name: "How2R",
         download: "https://github.com/linjieli222/VALUE",
         code: "https://github.com/linjieli222/HERO",
-        metric: "METEOR, Rouge-L"
+        metric: "Recall"
+    },
+    {
+        name: "Youcook2 Retrieval",
+        download: "https://github.com/linjieli222/VALUE",
+        code: "https://github.com/linjieli222/HERO",
+        metric: "Recall"
+    }
+]
+
+export const QA_MODEL = [
+    {
+        name: "TVQA",
+        download: "https://github.com/linjieli222/VALUE",
+        code: "https://github.com/linjieli222/HERO",
+        metric: "Accuracy"
     },
     {
         name: "VIOLIN",
@@ -30,15 +39,25 @@ export const TASK_MODEL = [
         metric: "Accuracy"
     },
     {
-        name: "How2R",
-        download: "https://github.com/linjieli222/VALUE",
-        code: "https://github.com/linjieli222/HERO",
-        metric: "Recall"
-    },
-    {
         name: "HowQA",
         download: "https://github.com/linjieli222/VALUE",
         code: "https://github.com/linjieli222/HERO",
         metric: "Accuracy"
-    } 
+    }
+
+]
+
+export const CAPTION_MODEL = [
+    {
+        name: "Youcook2 Captioning",
+        download: "https://github.com/linjieli222/VALUE",
+        code: "https://github.com/linjieli222/HERO",
+        metric: "METEOR, Rouge-L"
+    },
+    {
+        name: "TVC",
+        download: "https://github.com/linjieli222/VALUE",
+        code: "https://github.com/linjieli222/HERO",
+        metric: "METEOR, Rouge-L"
+    }
 ]
