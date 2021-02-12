@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { LEADERBOARD_MODEL, METRIC_MAPS } from './LeaderboardModel';
-import { SortUp, SortDown } from 'react-bootstrap-icons';
+import { SortUp, SortDown, ArrowDownUp } from 'react-bootstrap-icons';
 import './Tables.css'
 
 export class Leaderboard extends Component{
@@ -135,7 +135,9 @@ export class Leaderboard extends Component{
 
     buildIcon = (col) => {
         if (col !== this.state.lastCol) {
-            return (null);
+            return (
+                <ArrowDownUp />
+            );
         }
         else {
             if (this.state.direction === -1) {
