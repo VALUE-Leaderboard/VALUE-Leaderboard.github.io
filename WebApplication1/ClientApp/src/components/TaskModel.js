@@ -16,6 +16,12 @@ export const RETRIEVAL_MODEL = [
         download: "https://github.com/linjieli222/VALUE",
         code: "https://github.com/linjieli222/HERO",
         metric: "Recall"
+    },
+    {
+        name: "VATEX-EN R",
+        download: "https://github.com/linjieli222/VALUE",
+        code: "https://github.com/linjieli222/HERO",
+        metric: "Recall"
     }
 ]
 
@@ -56,6 +62,12 @@ export const CAPTION_MODEL = [
     },
     {
         name: "TVC",
+        download: "https://github.com/linjieli222/VALUE",
+        code: "https://github.com/linjieli222/HERO",
+        metric: "METEOR, Rouge-L"
+    },
+    {
+        name: "VATEX-EN C ",
         download: "https://github.com/linjieli222/VALUE",
         code: "https://github.com/linjieli222/HERO",
         metric: "METEOR, Rouge-L"

@@ -5,12 +5,14 @@ export const LEADERBOARD_MODEL = [
         tvr: 18.42,
         how2r: 15.65,
         youcook2r: "-",
+        vatexr: "-",
         tvqa: 70.65,
         how2qa: 71.36,
         violin: 65.72,
         vlep: "-", 
         tvc: 32.72,
-        youcook2c: "-"
+        youcook2c: "-",
+        vatexc: "-"
     },
     {
         date: "12th February 2021",
@@ -18,18 +20,20 @@ export const LEADERBOARD_MODEL = [
         tvr: 36.66,
         how2r: 21.06,
         youcook2r: "-",
+        vatexr: "-",
         tvqa: 73.61,
         how2qa: 73.81,
         violin: 68.59,
         vlep: "-",
         tvc: 34.16,
-        youcook2c: "-"
+        youcook2c: "-",
+        vatexc: "-"
     },
 ]
 
 export const METRIC_MAPS = {
-    "cap_avg_metric": ["tvc", "youcook2c"],
+    "cap_avg_metric": ["tvc", "youcook2c", "vatexc"],
     "qa_avg_metric": ["tvqa", "how2qa", "violin", "vlep"],
-    "ret_avg_metric": ["tvr", "how2r", "youcook2r"],
+    "ret_avg_metric": ["tvr", "how2r", "youcook2r", "vatexr"],
 }
 

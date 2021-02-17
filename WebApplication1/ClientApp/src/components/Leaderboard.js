@@ -67,9 +67,9 @@ export class Leaderboard extends Component{
         this.setState({ data: arrayCopy });
     }
 
-    buildTableRow = (date, model, TVR, How2R, YouCook2R, TVQA, How2QA, VIOLIN, VLEP, TVC, YouCook2C) => {
+    buildTableRow = (date, model, TVR, How2R, YouCook2R, VatexR, TVQA, How2QA, VIOLIN, VLEP, TVC, YouCook2C, VatexC) => {
 
-        var t1, t2, t3, t4, t5, t6, t7, t8, t9, ret_avg_metric, qa_avg_metric, cap_avg_metric;
+        var t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, ret_avg_metric, qa_avg_metric, cap_avg_metric;
         if (TVR === "-") {
             t1 = 0;
         }
@@ -91,55 +91,69 @@ export class Leaderboard extends Component{
             t3 = YouCook2R;
         }
 
-        ret_avg_metric = (t1 + t2 + t3) / 3;
-        ret_avg_metric = ret_avg_metric.toFixed(2);
-
-        if (TVQA === "-") {
+        if (VatexR === "-") {
             t4 = 0;
         }
         else {
-            t4 = TVQA;
+            t4 = VatexR;
         }
 
-        if (How2QA === "-") {
+        ret_avg_metric = (t1 + t2 + t3 + t4) / 4;
+        ret_avg_metric = ret_avg_metric.toFixed(2);
+
+        if (TVQA === "-") {
             t5 = 0;
         }
         else {
-            t5 = How2QA;
+            t5 = TVQA;
         }
 
-        if (VIOLIN === "-") {
+        if (How2QA === "-") {
             t6 = 0;
         }
         else {
-            t6 = VIOLIN;
+            t6 = How2QA;
         }
 
-        if (VLEP === "-") {
+        if (VIOLIN === "-") {
             t7 = 0;
         }
         else {
-            t7 = VLEP;
+            t7 = VIOLIN;
         }
 
-        qa_avg_metric = (t4 + t5 + t6 + t7) / 4;
-        qa_avg_metric = qa_avg_metric.toFixed(2);
-
-        if (TVC === "-") {
+        if (VLEP === "-") {
             t8 = 0;
         }
         else {
-            t8 = TVC;
+            t8 = VLEP;
         }
 
-        if (YouCook2C === "-") {
+        qa_avg_metric = (t5 + t6 + t7 + t8) / 4;
+        qa_avg_metric = qa_avg_metric.toFixed(2);
+
+        if (TVC === "-") {
             t9 = 0;
         }
         else {
-            t9 = YouCook2C;
+            t9 = TVC;
         }
 
-        cap_avg_metric = (t8 + t9) / 2;
+        if (YouCook2C === "-") {
+            t10 = 0;
+        }
+        else {
+            t10 = YouCook2C;
+        }
+
+        if (VatexC === "-") {
+            t11 = 0;
+        }
+        else {
+            t11 = VatexC;
+        }
+
+        cap_avg_metric = (t9 + t10 + t11) / 3;
         cap_avg_metric = cap_avg_metric.toFixed(2);
 
         return (
@@ -149,6 +163,7 @@ export class Leaderboard extends Component{
                 <td> {TVR} </td>
                 <td> {How2R} </td>
                 <td> {YouCook2R}</td>
+                <td> {VatexR}</td>
                 <td> {ret_avg_metric} </td>
                 <td> {TVQA} </td>
                 <td> {How2QA}</td>
@@ -157,6 +172,7 @@ export class Leaderboard extends Component{
                 <td> {qa_avg_metric} </td>
                 <td> {TVC} </td>
                 <td> {YouCook2C}</td>
+                <td> {VatexC}</td>
                 <td> {cap_avg_metric} </td>
             </tr>
         );
@@ -183,17 +199,19 @@ export class Leaderboard extends Component{
     }
 
     render() {
-        const rows = this.state.data.map((item) => this.buildTableRow(item.date, item.model, item.tvr, item.how2r, item.youcook2r, item.tvqa, item.how2qa, item.violin, item.vlep, item.tvc, item.youcook2c));
+        const rows = this.state.data.map((item) => this.buildTableRow(item.date, item.model, item.tvr, item.how2r, item.youcook2r, item.vatexr, item.tvqa, item.how2qa, item.violin, item.vlep, item.tvc, item.youcook2c, item.vatexc));
         var date = this.buildIcon("date");
         var t1 = this.buildIcon("tvr");
         var t2 = this.buildIcon("how2r");
         var t3 = this.buildIcon("youcook2r");
-        var t4 = this.buildIcon("tvqa");
-        var t5 = this.buildIcon("how2qa");
-        var t6 = this.buildIcon("violin");
-        var t7 = this.buildIcon("vlep");
-        var t8 = this.buildIcon("tvc");
-        var t9 = this.buildIcon("youcook2c");
+        var t4 = this.buildIcon("vatexr");
+        var t5 = this.buildIcon("tvqa");
+        var t6 = this.buildIcon("how2qa");
+        var t7 = this.buildIcon("violin");
+        var t8 = this.buildIcon("vlep");
+        var t9 = this.buildIcon("tvc");
+        var t10 = this.buildIcon("youcook2c");
+        var t11 = this.buildIcon("vatexc");
         var ret_avg = this.buildIcon("ret_avg_metric");
         var qa_avg = this.buildIcon("qa_avg_metric");
         var cap_avg = this.buildIcon("cap_avg_metric");
@@ -209,14 +227,16 @@ export class Leaderboard extends Component{
                                 <th onClick={() => this.sortBy('tvr')}> TVR {t1} </th>
                                 <th onClick={() => this.sortBy('how2r')}> How2R {t2}</th>
                                 <th onClick={() => this.sortBy('youcook2r')}> YouCook2R {t3}</th>
+                                <th onClick={() => this.sortBy('vatexr')}> VATEX EN R {t4}</th>
                                 <th onClick={() => this.sortBy('ret_avg_metric')}> Retrieval Average {ret_avg} </th>
-                                <th onClick={() => this.sortBy('tvqa')}> TVQA {t4}</th>
-                                <th onClick={() => this.sortBy('how2qa')}> How2QA {t5}</th>
-                                <th onClick={() => this.sortBy('violin')}> VIOLIN {t6}</th>
-                                <th onClick={() => this.sortBy('vlep')}> VLEP {t7}</th>
+                                <th onClick={() => this.sortBy('tvqa')}> TVQA {t5}</th>
+                                <th onClick={() => this.sortBy('how2qa')}> How2QA {t6}</th>
+                                <th onClick={() => this.sortBy('violin')}> VIOLIN {t7}</th>
+                                <th onClick={() => this.sortBy('vlep')}> VLEP {t8}</th>
                                 <th onClick={() => this.sortBy('qa_avg_metric')}> QA Average {qa_avg}</th>
-                                <th onClick={() => this.sortBy('tvc')}> TVC {t8}</th>
-                                <th onClick={() => this.sortBy('youcook2c')}> YouCook2C {t9}</th>
+                                <th onClick={() => this.sortBy('tvc')}> TVC {t9}</th>
+                                <th onClick={() => this.sortBy('youcook2c')}> YouCook2C {t10}</th>
+                                <th onClick={() => this.sortBy('vatexc')}> VATEX EN C {t4}</th>
                                 <th onClick={() => this.sortBy('cap_avg_metric')}> Captioning Average {cap_avg}</th>
                             </tr>
                         </thead>
