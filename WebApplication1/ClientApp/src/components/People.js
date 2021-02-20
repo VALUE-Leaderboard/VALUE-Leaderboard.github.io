@@ -38,33 +38,50 @@ export class People extends Component {
                 </div>
 
                 <div class="row">
-                    <div class="parent col-md-3">
+                    <div class="parent col-md-4">
                         <a href="https://sites.google.com/site/chengyu05" target="_blank">
                             <div class="imgDiv"><img class="profileDescriptionImg" src="https://convaistorageui.blob.core.windows.net/images/value_leaderboard/yu.jfif" /></div>
                             <div class="nameText"> Yu Cheng <br /> Microsoft </div>
                         </a>
                     </div>
 
-                    <div class="parent col-md-3">
+                    <div class="parent col-md-4">
                         <a href="https://scholar.google.com/citations?user=Gptgy4YAAAAJ&hl=en" target="_blank">
                             <div class="imgDiv"><img class="profileDescriptionImg" src="https://convaistorageui.blob.core.windows.net/images/value_leaderboard/yenchun.jfif" /></div>
                             <div class="nameText"> Yen-Chun Chen <br /> Microsoft </div>
                         </a>
                     </div>
 
-                    <div class="parent col-md-3">
+                    <div class="parent col-md-4">
                         <a href="https://zhegan27.github.io/" target="_blank">
                             <div class="imgDiv"><img class="profileDescriptionImg" src="https://convaistorageui.blob.core.windows.net/images/value_leaderboard/zhe_cropped.jpg" /></div>
                             <div class="nameText"> Zhe Gan <br /> Microsoft </div>
                         </a>
                     </div>
 
-                    <div class="parent col-md-3">
+                </div>
+
+                <div class="row">
+                    <div class="parent col-md-4">
                         <a href="https://lichengunc.github.io/" target="_blank">
                             <div class="imgDiv"><img class="profileDescriptionImg" src="https://convaistorageui.blob.core.windows.net/images/value_leaderboard/licheng_cropped.jpg" /></div>
                             <div class="nameText"> Licheng Yu <br /> Facebook </div>
                         </a>
                     </div>
+                    <div class="parent col-md-4">
+                        <a href="https://eric-xw.github.io/" target="_blank">
+                            <div class="imgDiv"><img class="profileDescriptionImg" src="https://convaistorageui.blob.core.windows.net/images/value_leaderboard/xin_wang.jpg" /></div>
+                            <div class="nameText"> Xin (Eric) Wang <br /> UC Santa Cruz </div>
+                        </a>
+                    </div>
+
+                    <div class="parent col-md-4">
+                        <a href="http://www.cs.ucsb.edu/~william/" target="_blank">
+                            <div class="imgDiv"><img class="profileDescriptionImg" src="https://convaistorageui.blob.core.windows.net/images/value_leaderboard/william_wang.jpg" /></div>
+                            <div class="nameText"> William Yang Wang <br /> UC Santa Barbara </div>
+                        </a>
+                    </div>
+
                 </div>
 
                 <div class="row">
@@ -82,14 +99,11 @@ export class People extends Component {
                         </a>
                     </div>
 
-                    <div class="parent col-md-4">
-                        <a href="https://www.linkedin.com/in/jingjing-liu-65703431/" target="_blank">
-                            <div class="imgDiv"><img class="profileDescriptionImg" src="https://convaistorageui.blob.core.windows.net/images/value_leaderboard/jj_cropped.png" /></div>
-                            <div class="nameText"> Jingjing Liu <br /> Microsoft </div>
-                        </a>
-                    </div>
+                    <a href="https://www.linkedin.com/in/jingjing-liu-65703431/" target="_blank">
+                        <div class="imgDiv"><img class="profileDescriptionImg" src="https://convaistorageui.blob.core.windows.net/images/value_leaderboard/jj_cropped.png" /></div>
+                        <div class="nameText"> Jingjing Liu <br /> Microsoft </div>
+                    </a>
                 </div>
-
             </div>
         );
     }
