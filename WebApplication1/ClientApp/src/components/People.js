@@ -99,10 +99,12 @@ export class People extends Component {
                         </a>
                     </div>
 
-                    <a href="https://www.linkedin.com/in/jingjing-liu-65703431/" target="_blank">
-                        <div class="imgDiv"><img class="profileDescriptionImg" src="https://convaistorageui.blob.core.windows.net/images/value_leaderboard/jj_cropped.png" /></div>
-                        <div class="nameText"> Jingjing Liu <br /> Microsoft </div>
-                    </a>
+                    <div class="parent col-md-4">
+                        <a href="https://www.linkedin.com/in/jingjing-liu-65703431/" target="_blank">
+                            <div class="imgDiv"><img class="profileDescriptionImg" src="https://convaistorageui.blob.core.windows.net/images/value_leaderboard/jj_cropped.png" /></div>
+                            <div class="nameText"> Jingjing Liu <br /> Microsoft </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         );
