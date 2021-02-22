@@ -42,6 +42,7 @@
     }
 
     .tabActive:link {
+        color: #FF958C;
         text-decoration: none;
         font-size: 17px;
     }
