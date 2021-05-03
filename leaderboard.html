@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>VALUE</title>
+        <meta name="description" content="VALUE is a evaluation benchmark built on 11 datasets across 3 tasks with the focus on multi-channel videos (video+subtitle) for Video-and-Language Understanding Evaluation">
+        <meta name="keywords" content="Video-and-Language Benchmark, Multi-channel Video, Video+Subtitle, Video Retrieval, Video Question Answering, Video Captioning,Video Description">
+        <meta name="author" content="VALUE">
+
+        <link rel="icon" href="image/favicon.ico">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"><b>VALUE</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#content" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="content">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/VALUE-Leaderboard/BaselineModels" target="_blank">Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tasks.html">Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="challenge_2021.html">Challenge</a>
+                    
+                    <!-- <li class="nav-item dropdown"> -->
+                        <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Challenge</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="challenge_2021.html">VALUE Challenge 2021</a>
+                        </div> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" target="_blank">Paper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="people.html">People</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        </nav>
+
+        <br/>
+        <br/>
+
+        <!-- <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <center><h3>Welcome to V<font size="4rem">A</font>T<font size="4rem">E</font>X Captioning Challenge 2019!</h3></center>
+                </div>
+            </div>
+        </div> 
+
+        <br/> -->
+
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h4>Leaderboard</h4>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h5>Offical Leaderboard</h5>
+                </div> -->
+
+                <br/>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h6>Use the tabs below to navigate to the corresponding leaderboard for each task. Please submit a pull request to <a href="https://github.com/VALUE-Leaderboard/VALUE-Leaderboard.github.io/pulls" target="_blank">VALUE website GitHub repository</a>, if you would like to report your results here. All results must have an submission entry on <a href="" target="_blank">the evaluation server hosted on CodaLab</a>.  </h6>
+                </div>
+
+                <br/><br/><br/>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" >
+                            <a class="nav-link active" id="retrieval-tab" data-toggle="tab" href="#retrieval" role="tab" aria-controls="retrieval" aria-selected="true">Retrieval</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="qa-tab" data-toggle="tab" href="#qa" role="tab" aria-controls="qa" aria-selected="false">QA</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="caption-tab" data-toggle="tab" href="#caption" role="tab" aria-controls="caption" aria-selected="false">Caption</a></li>
+                    </ul>
+
+                    <br/>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="retrieval" role="tabpanel" aria-labelledby="home-tab">
+                            <p>For text-to-video retrieval tasks, we report AveR for each task. AveR is the average of R@K (K = 1, 10, 100 for TVR/How2R and K = 1, 5, 10 for YC2R and VATEX-EN-R). The models are ranked by the average of AveRs across 4 tasks.</p>
+                            <table class="table table-hover sortable performanceTable">
+                            <thead>
+                                <tr>
+                                <th class="sorttable_nosort" scope="col">Rank</th>
+                                <th class="sorttable_nosort" scope="col">Model</th>
+                                <th scope="col">Average</th>
+                                <th scope="col">TVR</th>
+                                <th scope="col">How2R</th>
+                                <th scope="col">YC2R</th>
+                                <th scope="col">VATEX-EN-R</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <th scope="row">
+                                        <p>1</p>
+                                        <span class="date badge badge-secondary">May 30, 2021</span>
+                                    </th>
+                                    <td style="word-break:break-word;">
+                                        <b>HERO (PT+FT)</b>
+                                        <p class="institution">VALUE baseline</p>
+                                        <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
+                                    </td>
+                                    <td><b>35.33</b></td>
+                                    <td><b>20.52</b></td>
+                                    <td><b>5.45</b></td>
+                                    <td><b>48.86</b></td>
+                                    <td><b>66.49</b></td>
+                                </tr>
+
+                                <tr>
+                                <th scope="row">
+                                    <p>2</p>
+                                    <span class="date badge badge-secondary">May 30, 2021</span>
+                                </th>
+                                <td style="word-break:break-word;">
+                                    <b>HERO (FT-only)</b>
+                                    <p class="institution">VALUE baseline</p>
+                                    <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
+                                </td>
+                                <td><b>29.56</b></td>
+                                <td><b>15.62</b></td>
+                                <td><b>2.35</b></td>
+                                <td><b>34.63</b></td>
+                                <td><b>65.62</b></td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="qa" role="tabpanel" aria-labelledby="qa-tab">
+                            <p>For video question answering tasks, we report accuracy on each task. The models are ranked by the average of accuracy across 4 tasks.</p>
+                            <table class="table table-hover sortable performanceTable">
+                            <thead>
+                                <tr>
+                                <th class="sorttable_nosort" scope="col">Rank</th>
+                                <th class="sorttable_nosort" scope="col">Model</th>
+                                <th scope="col">Average</th>
+                                <th scope="col">TVQA</th>
+                                <th scope="col">VIOLIN</th>
+                                <th scope="col">How2QA</th>
+                                <th scope="col">VLEP</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <th scope="row">
+                                        <p>1</p>
+                                        <span class="date badge badge-secondary">May 30, 2021</span>
+                                    </th>
+                                    <td style="word-break:break-word;">
+                                        <b>HERO (PT+FT)</b>
+                                        <p class="institution">VALUE baseline</p>
+                                        <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
+                                    </td>
+                                    <td><b>71.28</b></td>
+                                    <td><b>74.80</b></td>
+                                    <td><b>68.59</b></td>
+                                    <td><b>74.32</b></td>
+                                    <td><b>67.40</b></td>
+                                </tr>
+
+                                <tr>
+                                <th scope="row">
+                                    <p>2</p>
+                                    <span class="date badge badge-secondary">May 30, 2021</span>
+                                </th>
+                                <td style="word-break:break-word;">
+                                    <b>HERO (FT-only)</b>
+                                    <p class="institution">VALUE baseline</p>
+                                    <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
+                                </td>
+                                <td><b>66.74</b></td>
+                                <td><b>71.64</b></td>
+                                <td><b>67.21</b></td>
+                                <td><b>69.44</b></td>
+                                <td><b>58.65</b></td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="caption" role="tabpanel" aria-labelledby="caption-tab">
+                            <p>For video captioning tasks, we report CiDER on each task. The models are ranked by the average of CiDER scores across 3 tasks.</p>
+                            <table class="table table-hover sortable performanceTable">
+                            <thead>
+                                <tr>
+                                <th class="sorttable_nosort" scope="col">Rank</th>
+                                <th class="sorttable_nosort" scope="col">Model</th>
+                                <th scope="col">Average</th>
+                                <th scope="col">TVC</th>
+                                <th scope="col">YC2C</th>
+                                <th scope="col">VATEX-EN-C</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <th scope="row">
+                                        <p>1</p>
+                                        <span class="date badge badge-secondary">May 30, 2021</span>
+                                    </th>
+                                    <td style="word-break:break-word;">
+                                        <b>HERO (PT+FT)</b>
+                                        <p class="institution">VALUE baseline</p>
+                                        <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
+                                    </td>
+                                    <td><b>76.16</b></td>
+                                    <td><b>51.56</b></td>
+                                    <td><b>120.73</b></td>
+                                    <td><b>56.19</b></td>
+                                </tr>
+
+                                <tr>
+                                <th scope="row">
+                                    <p>2</p>
+                                    <span class="date badge badge-secondary">May 30, 2021</span>
+                                </th>
+                                <td style="word-break:break-word;">
+                                    <b>HERO (FT-only)</b>
+                                    <p class="institution">VALUE baseline</p>
+                                    <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
+                                </td>
+                                <td><b>73.89</b></td>
+                                <td><b>51.47</b></td>
+                                <td><b>113.23</b></td>
+                                <td><b>56.97</b></td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+        </div>
+
+        <br/>
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sorttable.js"></script>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/15106f0a68.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>VALUE</title>
+        <meta name="description" content="VALUE is a evaluation benchmark built on 11 datasets across 3 tasks with the focus on multi-channel videos (video+subtitle) for Video-and-Language Understanding Evaluation">
+        <meta name="keywords" content="Video-and-Language Benchmark, Multi-channel Video, Video+Subtitle, Video Retrieval, Video Question Answering, Video Captioning,Video Description">
+        <meta name="author" content="VALUE">
+
+        <link rel="icon" href="image/favicon.ico">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><b>VALUE</b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#content" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="content">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="explore.html">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="download.html">Download</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Leaderboard</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="leaderboard.html">Retrieval</a>
+                                <a class="dropdown-item" href="leaderboard.html">QA</a>
+                                <a class="dropdown-item" href="leaderboard.html">Captioning</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="challenge_2021.html">Challenge</a>
+                        
+                        <!-- <li class="nav-item dropdown"> -->
+                            <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Challenge</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="challenge_2021.html">VALUE Challenge 2021</a>
+                            </div> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" target="_blank">Paper</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:vatex.org@gmail.com">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <div class="container">
+            <h1 class="display-5 sharepoint-dark-blue">Meet VALUE!</h1>
+            <p class="lead sharepoint-dark-blue">A Comprehensive Benchmark for <b>V</b>ideo <b>A</b>nd <b>L</b>anguage <b>U</b>nderstanding <b>E</b>valuation.</p>
+            </div>
+        </div>
+
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h4>Why VALUE?</h4>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumb">
+                    <div class="card">
+                        <div class="card-body">
+                            <center><span class="fa-4x ms-blue">
+                                <!-- <i class="fas fa-video"></i> -->
+                                <i class="fas fa-photo-video"></i>
+                                <i class="far fa-closed-captioning"></i>
+                            </span></center>
+                            
+                            <!-- <img src="image/multilingual.png" class="center" style="height:6rem; width:6rem;"/> -->
+                            <br/>
+                            <center><h5 class="card-title">MULTI-CHANNEL VIDEO</h5>
+                            <p class="card-text"><font size="3rem">With both <b>Video Frames</b> and <b>Subtitle/ASR</b></font></p></center>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumb">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- <img src="image/coverage.png" class="center" style="height:6rem; width:6rem;"/>
+                            <br/> -->
+                            <center><span class="fa-4x">
+                                <i class="fab fa-youtube youtube-red"></i>
+                                <i class="fas fa-tv ms-blue"></i>
+                                <i class="fas fa-film ms-blue"></i>
+                            </span></center>
+                            <center><h5 class="card-title">DIVERSE VIDEO DOMAIN</h5>
+                            <p class="card-text"><font size="3rem">Diverse video content from <b>YouTube</b>, <b>TV Episodes</b> and <b>Movie Clips</b></font></p></center>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumb">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- <img src="image/largescale.png" class="center" style="height:6rem; width:6rem;"/> -->
+                            <center>
+                                <!-- <span class="fa-4x"> -->
+                                <!-- <i class="fas fa-search ms-blue"></i> -->
+                                <img src="image/retrieval.png" style="height:5rem;vertical-align: middle;"/>
+                                <img src="image/qa.png" style="height:5rem;vertical-align: middle;"/>
+                                <img src="image/caption.png" style="height:5rem;vertical-align: middle;"/>
+                                <!-- <i class="fas fa-video ms-blue"></i>
+                                <i class="fas fa-language ms-blue"></i> -->
+                            <!-- </span> -->
+                            </center>
+                            <br/>
+                            <center><h5 class="card-title">Various Datasets over Representative Tasks</h5>
+                            <p class="card-text"><font size="3rem"><b>11</b> datasets over <b>3</b> tasks: <b>Retrieval</b>, <b>Question Answering</b> and <b>Captioning</b>.</font></p></center>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumb">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="image/diversity.png" class="center" style="height:6rem; width:6rem;"/>
+                            <br/>
+                            <center><h5 class="card-title">LEXICAL DIVERSITY</h5>
+                            <p class="card-text"><font size="3rem"><b>Unique</b> and <b>lexically-richer</b> annotations to empower more natural and diverse caption generation.</font></p></center>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h4>Comparison</h4>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <canvas id="length" height="100"></canvas>
+                    <br/>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumb">
+                    <canvas id="noun" height="150"></canvas>
+                    <br/>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumb">
+                    <canvas id="verb" height="150"></canvas>
+                    <br/>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h4>Paper</h4>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <a href="https://arxiv.org/abs/1904.03493" target="_blank">
+                        <img src="image/paper.png" class="rounded img-fluid mx-auto d-block" border="5"/>
+                    </a>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                        <h6>Please cite our paper as below if you use the VALUE benchmark or starter code.</h6>
+                        <pre><code>
+@InProceedings{Wang_2019_ICCV,
+author = {Wang, Xin and Wu, Jiawei and Chen, Junkun and Li, Lei and Wang, Yuan-Fang and Wang, William Yang},
+title = {VaTeX: A Large-Scale, High-Quality Multilingual Dataset for Video-and-Language Research},
+booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+month = {October},
+year = {2019}
+}
+                        </code></pre>
+                    </details>
+                </div>
+            </div>
+
+        </div>
+
+        <br/>
+
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h4>Contact</h4>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <a href="mailto:vatex.org@gmail.com" target="_blank">
+                        <img src="image/mail.png" class="center" style="height:5rem; width:5rem;"/>
+                    </a>
+                    <br/>
+                    <center><h6>Have any questions or suggestions? Feel free to contact us via the team email vatex.org@gmail.com!</h6></center>
+                </div>
+            </div>
+
+        </div>
+
+        <br/>
+
+        <!-- <hr> -->
+
+        <!-- <div class="container footer">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 thumb">
+                    <p>
+                        <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/copyright"> Copyright &copy; Microsoft</a>
+                    </p>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 thumb">
+                    <p>
+                        The dataset is under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.<br/>
+                        Contact the VATEX team by <a href="mailto:vatex.org@gmail.com" target="_blank">vatex.org@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+        </div> -->
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Chart.bundle.min.js"></script>
+    <script>
+    var ctx = document.getElementById("length");
+    var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["<2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29",">30"],
+        datasets: [{
+            label: "MSR-VTT",
+            data: [0.0025,0.3785,5.997,9.8405,12.35,11.268,10.511,10.266,9.1355,7.2815,5.3565,4.149,3.111,2.356,1.7875,1.361,1.043,0.8465,0.6505,0.5455,0.392,0.305,0.248,0.1895,0.158,0.109,0.081,0.064,0.2165],
+            backgroundColor: "rgba(254,117,91,0.4)",
+            borderColor: "rgba(254,117,91,1)",
+            borderWidth: 1
+        },
+        {
+            label: "VATEX-en",
+            data: [0,0,0,0,0,0,0.0676052242603407,0.444159054011486,1.91693522983353,8.45428772201895,11.9918098330466,13.8263587680826,13.2649204003005,11.5379582737648,9.52821730596816,7.27446751799171,5.56713271462841,4.08587559669486,3.02430395696528,2.25762679008457,1.6508759601638,1.24039836196661,0.91448787225278,0.695437253144006,0.527514599336063,0.391092587656595,0.285928905473842,0.229712374906104,0.822893697448448],
+            backgroundColor: "rgba(129,214,82,0.4)",
+            borderColor: "rgba(129,214,82,1)",
+            borderWidth: 1
+        },
+        {
+            label: "VATEX-zh",
+            data: [0.00072693789527248,0.0036346894763624,0.000242312631757494,0.00169618842230245,0.00702706632096731,0.0676052242603407,0.626862778356636,3.29811723085124,9.1511788509535,13.3412488793041,14.4103322106181,13.1209866970365,11.0664178923647,8.84877268652015,6.90251762824396,5.19930213962054,3.86609803969081,2.76115243887664,1.97824032566818,1.42431364947055,1.0397635028714,0.73759965106981,0.559499866728053,0.403208219244469,0.298529162325232,0.219292931740532,0.161864838014006,0.119702440088202,0.384065521335627],
+            backgroundColor: "rgba(71,159,247,0.4)",
+            borderColor: "rgba(71,159,247,1)",
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Caption Length',
+                    fontStyle: 'normal',
+                    fontColor: "rgba(17,73,138,1)",
+                    fontSize: "14"
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Percentage (%)',
+                    fontStyle: 'normal',
+                    fontColor: "rgba(17,73,138,1)",
+                    fontSize: "14"
+                }
+            }]
+        }
+    }
+    });
+    </script>
+
+    <script>
+    var ctx = document.getElementById("noun");
+    var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["0","1","2","3","4","5","6","7","8",">9"],
+        datasets: [{
+            label: "MSR-VTT",
+            data: [0.0605,5.2645,26.7705,31.7435,19.776,9.3215,4.0655,1.6635,0.7735,0.561],
+            backgroundColor: "rgba(254,117,91,0.4)",
+            borderColor: "rgba(254,117,91,1)",
+            borderWidth: 1
+        },
+        {
+            label: "VATEX-en",
+            data: [0.00121156315878747,0.238193317017616,4.63907533499721,21.7453778865492,33.8224817659745,23.7502726017107,10.4242894182074,3.60997358792314,1.20477840509826,0.564346119363202],
+            backgroundColor: "rgba(129,214,82,0.4)",
+            borderColor: "rgba(129,214,82,1)",
+            borderWidth: 1
+        },
+        {
+            label: "VATEX-zh",
+            data: [0.0133271947466621,0.458940124548693,6.65972037122295,24.6213865128789,33.0308463980227,21.4291599021057,9.11773970777097,3.16969153601977,1.00995904916523,0.489229203518379],
+            backgroundColor: "rgba(71,159,247,0.4)",
+            borderColor: "rgba(71,159,247,1)",
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Number of Unique Nouns per Caption',
+                    fontStyle: 'normal',
+                    fontColor: "rgba(17,73,138,1)",
+                    fontSize: "14"
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Percentage (%)',
+                    fontStyle: 'normal',
+                    fontColor: "rgba(17,73,138,1)",
+                    fontSize: "14"
+                }
+            }]
+        }
+    }
+    });
+    </script>
+
+    <script>
+    var ctx = document.getElementById("verb");
+    var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["0","1","2","3","4","5","6",">7"],
+        datasets: [{
+            label: "MSR-VTT",
+            data: [10.733,31.4965,39.4385,13.194,3.5525,1.075,0.366,0.1445],
+            backgroundColor: "rgba(254,117,91,0.4)",
+            borderColor: "rgba(254,117,91,1)",
+            borderWidth: 1
+        },
+        {
+            label: "VATEX-en",
+            data: [2.11393539945237,14.5874627444329,33.1217136349318,31.0959800334391,13.8287818944002,3.93830720395454,1.00123579442196,0.312583294967167],
+            backgroundColor: "rgba(129,214,82,0.4)",
+            borderColor: "rgba(129,214,82,1)",
+            borderWidth: 1
+        },
+        {
+            label: "VATEX-zh",
+            data: [1.79093266131963,20.4933485182583,40.4148392255688,24.5966706244396,8.84538030967554,2.7243209188495,0.787758365843611,0.346749376044973],
+            backgroundColor: "rgba(71,159,247,0.4)",
+            borderColor: "rgba(71,159,247,1)",
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: "Number of Unique Verbs per Caption",
+                    fontStyle: "normal",
+                    fontColor: "rgba(17,73,138,1)",
+                    fontSize: "14"
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Percentage (%)',
+                    fontStyle: 'normal',
+                    fontColor: "rgba(17,73,138,1)",
+                    fontSize: "14"
+                }
+            }]
+        }
+    }
+    });
+    </script>
+</html>

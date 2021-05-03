@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>VALUE</title>
+        <meta name="description" content="VATEX is a a large-scale, high-quality multilingual dataset for Video-and-Language research.">
+        <meta name="keywords" content="Video Captioning,Video Description,Multilingual Video Captioning,Video-based Machine Translation">
+        <meta name="author" content="VATEX">
+
+        <link rel="icon" href="image/favicon.ico">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><b>VALUE</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#content" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="content">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="explore.html">Explore</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="download.html">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="challenge_2021.html">Challenge</a>
+                    
+                    <!-- <li class="nav-item dropdown"> -->
+                        <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Challenge</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="challenge_2021.html">VALUE Challenge 2021</a>
+                        </div> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" target="_blank">Paper</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <br/>
+        <br/>
+
+         <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h4>VATEX v1.1 (Latest Version)</h4>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h6>Note: we will hold the annotations of the test sets for challenge use, but you can submit the results to our <a href="https://competitions.codalab.org/competitions/24360">VATEX Video Captioning Challenge</a> and <a href="https://competitions.codalab.org/competitions/24384">Video-guided Machine Translation Challenge</a> for evaluation. The challenges will be always valid and never expire.
+                    The split of the validation set is not mandatory, and you are allowed to submit the testing results by a model trained on both training & validation sets.</h6>
+                </div>
+
+                <br/>
+                <br/>
+
+                <!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 thumb">
+                    <h5>Training Set</h5> 
+                    (combination of training & validation sets in v1.0)
+                    <ul>
+                        <li>28,991 Videos</li>
+                        <li>289,910 English Captions</li>
+                        <li>289,910 Chinese Captions</li>
+                    </ul>
+                    <p><a href="./data/vatex_training_v1.0.json" target="_blank">
+                        <img src="image/download.png" style="height:4rem; width:4rem;"/>
+                    </a>
+                    (v1.1, 63.9 MB)</p>
+                </div> -->
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 thumb">
+                    <h5>Training Set</h5>
+                    <ul>
+                        <li>25,991 Videos</li>
+                        <li>259,910 English Captions</li>
+                        <li>259,910 Chinese Captions</li>
+                    </ul>
+                    <p><a href="./data/vatex_training_v1.0.json" target="_blank">
+                        <img src="image/download.png" style="height:4rem; width:4rem;"/>
+                    </a>
+                    (v1.0, 57.3 MB)</p>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 thumb">
+                    <h5>Validation Set</h5>
+                    <ul>
+                        <li>3,000 Videos</li>
+                        <li>30,000 English Captions</li>
+                        <li>30,000 Chinese Captions</li>
+                    </ul>
+                    <p><a href="./data/vatex_validation_v1.0.json" target="_blank">
+                        <img src="image/download.png" style="height:4rem; width:4rem;"/>
+                    </a>
+                    (v1.0, 6.6 MB)</p>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 thumb">
+                    <h5>Public Test Set</h5>
+                    (English released for VMT evaluation)
+                    <ul>
+                        <li>6,000 Videos</li>
+                        <li>6,0000 English Captions</li>
+                        <!-- <br> -->
+                        <!-- <li>30,000 English Captions</li> -->
+                        <!-- <li>30,000 Chinese Captions</li> -->
+                    </ul>
+                    <p><a href="./data/vatex_public_test_english_v1.1.json" target="_blank">
+                        <img src="image/download.png" style="height:4rem; width:4rem;"/>
+                    </a>
+                    (v1.1, 4.9 MB)</p>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 thumb">
+                    <h5>Private Test Set</h5>
+                    (heldout for caption evaluation)
+                    <ul>
+                        <li>6,278 Videos</li>
+                        <br>
+                        <!-- <br> -->
+                        <!-- <li>60,000 English Captions</li> -->
+                        <!-- <li>60,000 Chinese Captions</li> -->
+                    </ul>
+                    <p><a href="./data/vatex_private_test_without_annotations.json" target="_blank">
+                        <img src="image/download.png" style="height:4rem; width:4rem;"/>
+                    </a>
+                    (v1.1, 0.26 MB)</p>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h4>VATEX v1.0 (for use of VATEX Captioning Challenge 2019)</h4>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+               <!--  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h6>Note: we will hold the annotations of the test set for the challenge use, but you can submit the results to our <a href="file:///Users/xinwang/Dropbox/VATEX/main/captioning.html">VATEX Captioning Challenge</a> for testing.</h6>
+                </div> -->
+
+                <br/>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 thumb">
+                    <h5>Training Set</h5>
+                    <ul>
+                        <li>25,991 Videos</li>
+                        <li>259,910 English Captions</li>
+                        <li>259,910 Chinese Captions</li>
+                    </ul>
+                    <p><a href="./data/vatex_training_v1.0.json" target="_blank">
+                        <img src="image/download.png" style="height:4rem; width:4rem;"/>
+                    </a>
+                    (v1.0, 57.3 MB)</p>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 thumb">
+                    <h5>Validation Set</h5>
+                    <ul>
+                        <li>3,000 Videos</li>
+                        <li>30,000 English Captions</li>
+                        <li>30,000 Chinese Captions</li>
+                    </ul>
+                    <p><a href="./data/vatex_validation_v1.0.json" target="_blank">
+                        <img src="image/download.png" style="height:4rem; width:4rem;"/>
+                    </a>
+                    (v1.0, 6.6 MB)</p>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 thumb">
+                    <h5>Public Test Set</h5>
+                    <ul>
+                        <li>6,000 Videos</li>
+                        <br>
+                        <br>
+                        <!-- <li>60,000 English Captions</li> -->
+                        <!-- <li>60,000 Chinese Captions</li> -->
+                    </ul>
+                    <p><a href="./data/vatex_public_test_without_annotations.json" target="_blank">
+                        <img src="image/download.png" style="height:4rem; width:4rem;"/>
+                    </a>
+                    (v1.0, 0.25 MB)</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h4>Pretrained Video Features</h4>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h6>
+                        Note: Due to the legal and privacy concerns, <u>we cannot directly share the downloaded videos or clips from YouTube in any way (including but not limited to email, online drives and GitHub).</u> However, there are many open-source tools to download the original clips (e.g., <a href="https://github.com/activitynet/ActivityNet/tree/master/Crawler/Kinetics" target="_blank">[Tool #1]</a> and <a href="https://github.com/ytdl-org/youtube-dl" target="_blank">[Tool #2]</a>). Some videos might be unavailable (deleted or hidden by either YouTube or the users) at this moment, but they were available when we collected the dataset. Considering that it is an extremely small percentage, we expect that it won't have a significant impact on the performance. 
+                        <!-- <u>We will NOT respond the requests about sharing downloaded videos.</u> -->
+                    </h6>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h6>In addition to the YouTube video ids, we provide the pretrained video features below for quick development. The features including all the videos are extracted using a pretrained I3D model <a href="https://github.com/eric-xw/kinetics-i3d-pytorch">[here]</a>. Each video is represented by a numpy array of size (1, num_of_segments, 1024). </h6>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h5>I3D Features on AWS S3:</h5>
+                    <ul>
+                        <li>Train & Validation Sets (3.0 GB): <a href="https://vatex-feats.s3.amazonaws.com/trainval.zip">https://vatex-feats.s3.amazonaws.com/trainval.zip</a></li>
+                        <li>Public Test Set (634.9 MB): <a href="https://vatex-feats.s3.amazonaws.com/public_test.zip">https://vatex-feats.s3.amazonaws.com/public_test.zip</a></li>
+                        <li>Private Test Set (665.1 MB): <a href="https://vatex-feats.s3.amazonaws.com/private_test.zip">https://vatex-feats.s3.amazonaws.com/private_test.zip</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h4>Annotation Format</h4>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                <pre><code>
+{
+    'videoID': 'YouTubeID_StartTime_EndTime',
+    'enCap': 
+        [
+            'Regular English Caption #1',
+            'Regular English Caption #2',
+            'Regular English Caption #3',
+            'Regular English Caption #4',
+            'Regular English Caption #5',
+            'Parallel English Caption #1',
+            'Parallel English Caption #2',
+            'Parallel English Caption #3',
+            'Parallel English Caption #4',
+            'Parallel English Caption #5'
+        ],
+    'chCap': 
+        [
+            'Regular Chinese Caption #1',
+            'Regular Chinese Caption #2',
+            'Regular Chinese Caption #3',
+            'Regular Chinese Caption #4',
+            'Regular Chinese Caption #5',
+            'Parallel Chinese Caption #1',
+            'Parallel Chinese Caption #2',
+            'Parallel Chinese Caption #3',
+            'Parallel Chinese Caption #4',
+            'Parallel Chinese Caption #5'
+        ]
+}
+                </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+
+        <hr>
+
+        <div class="container footer">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 thumb">
+                    <p>
+                        Copyright &copy; UCSB NLP Group<br/>
+                        3530 Phelps Hall<br/>
+                        University of California, Santa Barbara<br/>
+                        Santa Barbara, CA 93106-5110
+                    </p>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 thumb">
+                    <p>
+                        <!-- VATEX is sponsored by ByteDance AI Lab.<br/> -->
+                        The dataset is under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.<br/>
+                        Contact the VATEX team by <a href="mailto:vatex.org@gmail.com">vatex.org@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</html>
