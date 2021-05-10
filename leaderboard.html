@@ -87,16 +87,21 @@
 
                 <br/>
 
-                <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                    <h6>Use the tabs below to navigate to the corresponding leaderboard for each task. </h6>
-                </div> -->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <!-- <h6>Use the tabs below to navigate to the corresponding leaderboard for each task. </h6> -->
+
+                    <p>If you would like to report your results here, please submit a pull request to <a href="https://github.com/VALUE-Leaderboard/VALUE-Leaderboard.github.io/pulls" target="_blank">VALUE website GitHub repository</a>. All results must have a submission entry on CodaLab. <a href="" target="_blank">Click here to navigate to evaluation portal on CodaLab!</a></p>
+                    <p>The VALUE leaderboard compiles results from task-agnostic models which can be applied to all three tasks. For task-specific models that works on a single type of tasks, please use the tabs below to navigate to the corresponding leaderboard.</p>
+                </div>
 
                 <br/><br/><br/>
 
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" >
-                            <a class="nav-link active" id="retrieval-tab" data-toggle="tab" href="#retrieval" role="tab" aria-controls="retrieval" aria-selected="true">Retrieval</a></li>
+                            <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">VALUE</a></li>
+                        <li class="nav-item" >
+                            <a class="nav-link" id="retrieval-tab" data-toggle="tab" href="#retrieval" role="tab" aria-controls="retrieval" aria-selected="false">Retrieval</a></li>
                         <li class="nav-item">
                             <a class="nav-link" id="qa-tab" data-toggle="tab" href="#qa" role="tab" aria-controls="qa" aria-selected="false">QA</a></li>
                         <li class="nav-item">
@@ -105,8 +110,108 @@
 
                     <br/>
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="retrieval" role="tabpanel" aria-labelledby="home-tab">
-                            <p>If you would like to report your results here, please submit a pull request to <a href="https://github.com/VALUE-Leaderboard/VALUE-Leaderboard.github.io/pulls" target="_blank">VALUE website GitHub repository</a>. All results must have a submission entry on CodaLab. <a href="" target="_blank">Click here to navigate to evaluation portal on CodaLab!</a></p>
+                        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="home-tab">
+                            <p>The models are ranked by the Meta-Ave, the average of model performance across 11 tasks. AveR, accuracy and CiDER are used as evaluation metrics for Retrieval, QA and Caption tasks, respectively.</p>
+                            <table class="table table-hover sortable  performanceTable">
+                                <col>
+                                <col>
+                                <col>
+                                <colgroup span="4" class="wBackground"></colgroup>
+                                <colgroup span="4"></colgroup>
+                                <colgroup span="3" class="wBackground"></colgroup>
+                            <thead>
+                                <!-- <tr>
+                                <th rowspan="2" >Rank</th>
+                                <td rowspan="2" >Model</td>
+                                <td rowspan="2" >Meta-Average</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td colspan="4" >Retrieval</td>
+                                <td colspan="4" >QA</td>
+                                <td colspan="3" >Caption</td>
+                                </tr> -->
+                                <tr>
+                                    <!-- <th scope="row"></th>
+                                <td></td>
+                                <td></td> -->
+                                
+                                <th class="sorttable_nosort" scope="col">Rank</th>
+                                <th class="sorttable_nosort" scope="col">Model</th>
+                                <th scope="col">Meta-Ave</th>
+                                <th scope="col">TVR</th>
+                                <th scope="col" >How2R</th>
+                                <th scope="col">YC2R</th>
+                                <th scope="col">VATEX-EN-R</th>
+                                <th scope="col">TVQA</th>
+                                <th scope="col">VIOLIN</th>
+                                <th scope="col">How2QA</th>
+                                <th scope="col">VLEP</th>
+                                <th scope="col">TVC</td>
+                                <th scope="col">YC2C</th>
+                                <th scope="col">VATEX-EN-C</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                
+
+                                <tr>
+                                    <th scope="row">
+                                        <p>1</p>
+                                        <span class="date badge badge-secondary">May 30, 2021</span>
+                                    </th>
+                                    <td style="word-break:break-word;">
+                                        <b>HERO (PT+FT)</b>
+                                        <p class="institution">VALUE baseline</p>
+                                        <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
+                                    </td>
+                                    <td><b>59.54</b></td>
+
+                                    <td><b>20.52</b></td>
+                                    <td><b>5.45</b></td>
+                                    <td><b>48.86</b></td>
+                                    <td><b>66.49</b></td>
+
+                                    <td><b>74.80</b></td>
+                                    <td><b>68.59</b></td>
+                                    <td><b>74.32</b></td>
+                                    <td><b>67.40</b></td>
+
+                                    <td><b>51.56</b></td>
+                                    <td><b>120.73</b></td>
+                                    <td><b>56.19</b></td>
+                                </tr>
+
+                                <tr>
+                                <th scope="row">
+                                    <p>2</p>
+                                    <span class="date badge badge-secondary">May 30, 2021</span>
+                                </th>
+                                <td style="word-break:break-word;">
+                                    <b>HERO (FT-only)</b>
+                                    <p class="institution">VALUE baseline</p>
+                                    <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
+                                </td>
+                                <td><b>55.17</b></td>
+
+                                <td><b>15.62</b></td>
+                                <td><b>2.35</b></td>
+                                <td><b>34.63</b></td>
+                                <td><b>65.62</b></td>
+
+                                <td><b>71.64</b></td>
+                                <td><b>67.21</b></td>
+                                <td><b>69.44</b></td>
+                                <td><b>58.65</b></td>
+
+                                <td><b>51.47</b></td>
+                                <td><b>113.23</b></td>
+                                <td><b>56.97</b></td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade " id="retrieval" role="tabpanel" aria-labelledby="home-tab">
                             <p>For text-to-video retrieval tasks, we report AveR for each task. AveR is the average of R@K (K = 1, 10, 100 for TVR/How2R and K = 1, 5, 10 for YC2R and VATEX-EN-R). The models are ranked by the average of AveRs across 4 tasks.</p>
                             <table class="table table-hover sortable performanceTable">
                             <thead>
@@ -159,7 +264,6 @@
                             </table>
                         </div>
                         <div class="tab-pane fade" id="qa" role="tabpanel" aria-labelledby="qa-tab">
-                            <p>If you would like to report your results here, please submit a pull request to <a href="https://github.com/VALUE-Leaderboard/VALUE-Leaderboard.github.io/pulls" target="_blank">VALUE website GitHub repository</a>. All results must have a submission entry on CodaLab. <a href="" target="_blank">Click here to navigate to evaluation portal on CodaLab!</a></p>
                             <p>For video question answering tasks, we report accuracy on each task. The models are ranked by the average of accuracy across 4 tasks.</p>
                             <table class="table table-hover sortable performanceTable">
                             <thead>
@@ -212,7 +316,6 @@
                             </table>
                         </div>
                         <div class="tab-pane fade" id="caption" role="tabpanel" aria-labelledby="caption-tab">
-                            <p>If you would like to report your results here, please submit a pull request to <a href="https://github.com/VALUE-Leaderboard/VALUE-Leaderboard.github.io/pulls" target="_blank">VALUE website GitHub repository</a>. All results must have a submission entry on CodaLab. <a href="" target="_blank">Click here to navigate to evaluation portal on CodaLab!</a></p>
                             <p>For video captioning tasks, we report CiDER on each task. The models are ranked by the average of CiDER scores across 3 tasks.</p>
                             <table class="table table-hover sortable performanceTable">
                             <thead>
