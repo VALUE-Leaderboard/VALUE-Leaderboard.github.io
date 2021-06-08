@@ -167,6 +167,7 @@ html {
   }
   .performanceTable {
     margin: 10px 0px;
+    font-size: 90%;
   }
   .performanceTable .institution {
     font-style: italic;
@@ -188,11 +189,14 @@ html {
   .performanceTable td,
   .performanceTable th {
     text-align: center;
-    max-width: 350px;
+    max-width: 150px;
   }
   .performanceTable .wBackground{
     background-color:#f3f3f3;
   }
+  /* .valueTable {
+    font-size: 90%;
+  } */
 
   .tasksTable{
     border-collapse:collapse;

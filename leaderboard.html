@@ -108,18 +108,18 @@
                         <li class="nav-item">
                             <a class="nav-link" id="qa-tab" data-toggle="tab" href="#qa" role="tab" aria-controls="qa" aria-selected="false">QA</a></li>
                         <li class="nav-item">
-                            <a class="nav-link" id="caption-tab" data-toggle="tab" href="#caption" role="tab" aria-controls="caption" aria-selected="false">Caption</a></li>
+                            <a class="nav-link" id="caption-tab" data-toggle="tab" href="#caption" role="tab" aria-controls="caption" aria-selected="false">Captioning</a></li>
                     </ul>
 
                     <br/>
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="home-tab">
-                            <p>The models are ranked by the Meta-Ave, the average of model performance across 11 tasks. AveR, accuracy and CiDER are used as evaluation metrics for Retrieval, QA and Caption tasks, respectively.</p>
+                            <p>The models are ranked by the Meta-Ave, the average of model performance across 11 tasks. AveR, accuracy and CiDER are used as evaluation metrics for Retrieval, QA and Captioning tasks, respectively.</p>
                             <table class="table table-hover sortable  performanceTable">
                                 <col>
                                 <col>
                                 <col>
-                                <col>
+                                <!-- <col> -->
                                 <colgroup span="4" class="wBackground"></colgroup>
                                 <colgroup span="4"></colgroup>
                                 <colgroup span="3" class="wBackground"></colgroup>
@@ -149,8 +149,8 @@
                                 <th scope="col">YC2R</th>
                                 <th scope="col">VATEX-EN-R</th>
                                 <th scope="col">TVQA</th>
-                                <th scope="col">VIOLIN</th>
                                 <th scope="col">How2QA</th>
+                                <th scope="col">VIOLIN</th>
                                 <th scope="col">VLEP</th>
                                 <th scope="col">TVC</td>
                                 <th scope="col">YC2C</th>
@@ -158,30 +158,57 @@
                             </tr>
                             </thead>
                             <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <p>-</p>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
+                                    </th>
+                                    <td style="word-break:break-word;">
+                                        <b>Human</b>
+                                        <p class="institution">VALUE baseline</p>
+                                        <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
+                                    </td>
+                                    <!-- <td><b></b></td> -->
+                                    <td><b>-</b></td>
+
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
+
+                                    <td><b>89.41</b></td>
+                                    <td><b>90.32</b></td>
+                                    <td><b>91.39</b></td>
+                                    <td><b>90.50</b></td>
+
+                                    <td><b>62.89</b></td>
+                                    <td><b>-</b></td>
+                                    <td><b>62.66</b></td>
+                                </tr>
 
                                 <tr>
                                     <th scope="row">
                                         <p>1</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
                                     </th>
                                     <td style="word-break:break-word;">
                                         <b>HERO</b> <br/> <b>(AT->ST, PT+FT)</b>
                                         <p class="institution">VALUE baseline</p>
                                         <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
                                     </td>
-                                    <td><b>57.81</b></td>
+                                    <td><b>57.58</b></td>
 
-                                    <td><b>15.72</b></td>
+                                    <td><b>13.56</b></td>
                                     <td><b>3.95</b></td>
                                     <td><b>54.28</b></td>
                                     <td><b>49.09</b></td>
 
-                                    <td><b>74.67</b></td>
-                                    <td><b>67.18</b></td>
+                                    <td><b>74.83</b></td>
                                     <td><b>74.60</b></td>
+                                    <td><b>67.18</b></td>
                                     <td><b>69.37</b></td>
 
-                                    <td><b>48.63</b></td>
+                                    <td><b>48.13</b></td>
                                     <td><b>121.89</b></td>
                                     <td><b>56.54</b></td>
                                 </tr>
@@ -190,54 +217,54 @@
                                 <tr>
                                     <th scope="row">
                                         <p>2</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
                                     </th>
                                     <td style="word-break:break-word;">
                                         <b>HERO</b> <br/> <b>(ST, PT+FT)</b>
                                         <p class="institution">VALUE baseline</p>
                                         <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
                                     </td>
-                                    <td><b>57.27</b></td>
+                                    <td><b>56.96</b></td>
 
-                                    <td><b>14.39</b></td>
-                                    <td><b>4.09</b></td>
-                                    <td><b>57.88</b></td>
-                                    <td><b>40.63</b></td>
+                                    <td><b>13.70</b></td>
+                                    <td><b>3.38</b></td>
+                                    <td><b>56.59</b></td>
+                                    <td><b>46.66</b></td>
 
-                                    <td><b>73.99</b></td>
-                                    <td><b>65.31</b></td>
-                                    <td><b>74.40</b></td>
-                                    <td><b>68.11</b></td>
+                                    <td><b>74.52</b></td>
+                                    <td><b>73.82</b></td>
+                                    <td><b>64.19</b></td>
+                                    <td><b>67.10</b></td>
 
-                                    <td><b>50.00</b></td>
-                                    <td><b>127.94</b></td>
-                                    <td><b>52.57</b></td>
+                                    <td><b>51.04</b></td>
+                                    <td><b>120.22</b></td>
+                                    <td><b>55.30</b></td>
                                 </tr>
                                 
 
                                 <tr>
                                     <th scope="row">
                                         <p>3</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
                                     </th>
                                     <td style="word-break:break-word;">
                                         <b>HERO</b> <br/> <b>(AT->ST, FT-only)</b>
                                         <p class="institution">VALUE baseline</p>
                                         <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
                                     </td>
-                                    <td><b>56.39</b></td>
+                                    <td><b>56.07</b></td>
 
-                                    <td><b>14.51</b></td>
+                                    <td><b>12.40</b></td>
                                     <td><b>3.61</b></td>
                                     <td><b>50.93</b></td>
                                     <td><b>49.91</b></td>
 
-                                    <td><b>74.63</b></td>
-                                    <td><b>66.80</b></td>
+                                    <td><b>74.38</b></td>
                                     <td><b>71.88</b></td>
+                                    <td><b>66.80</b></td>
                                     <td><b>68.68</b></td>
 
-                                    <td><b>50.58</b></td>
+                                    <td><b>49.41</b></td>
                                     <td><b>110.63</b></td>
                                     <td><b>58.09</b></td>
                                 </tr>
@@ -245,34 +272,34 @@
                                 <tr>
                                     <th scope="row">
                                         <p>4</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
                                     </th>
                                     <td style="word-break:break-word;">
                                         <b>HERO</b> <br/> <b>(ST, FT-only)</b>
                                         <p class="institution">VALUE baseline</p>
                                         <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
                                     </td>
-                                    <td><b>50.74</b></td>
+                                    <td><b>52.59</b></td>
 
-                                    <td><b>9.35</b></td>
-                                    <td><b>1.74</b></td>
-                                    <td><b>40.69</b></td>
-                                    <td><b>38.34</b></td>
+                                    <td><b>8.81</b></td>
+                                    <td><b>2.13</b></td>
+                                    <td><b>42.37</b></td>
+                                    <td><b>47.02</b></td>
 
-                                    <td><b>70.42</b></td>
-                                    <td><b>63.75</b></td>
-                                    <td><b>69.00</b></td>
-                                    <td><b>57.94</b></td>
+                                    <td><b>71.35</b></td>
+                                    <td><b>69.59</b></td>
+                                    <td><b>64.30</b></td>
+                                    <td><b>56.77</b></td>
 
-                                    <td><b>48.48</b></td>
-                                    <td><b>106.24</b></td>
-                                    <td><b>52.16</b></td>
+                                    <td><b>50.30</b></td>
+                                    <td><b>109.89</b></td>
+                                    <td><b>55.98</b></td>
                                 </tr>
                             </tbody>
                             </table>
                         </div>
                         <div class="tab-pane fade " id="retrieval" role="tabpanel" aria-labelledby="home-tab">
-                            <p>For text-to-video retrieval tasks, we report AveR for each task. AveR is the average of R@K (K = 1, 5, 10 for TVR/How2R and K = 1, 5, 10 for YC2R and VATEX-EN-R). The models are ranked by the average of AveRs across 4 tasks.</p>
+                            <p>For text-to-video retrieval tasks, we report AveR for each task. AveR is the average of R@K (K = 1, 5, 10). The models are ranked by the average of AveRs across 4 tasks.</p>
                             <table class="table table-hover sortable performanceTable">
                             <thead>
                                 <tr>
@@ -291,7 +318,7 @@
                                 <tr>
                                     <th scope="row">
                                         <p>1</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
                                     </th>
                                     <td style="word-break:break-word;">
                                         <b>HERO</b> <br/> <b>(AT->ST, PT+FT)</b>
@@ -299,9 +326,9 @@
                                         <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
                                     </td>
                                     <!-- <td><b></b></td> -->
-                                    <td><b>30.76</b></td>
+                                    <td><b>30.22</b></td>
 
-                                    <td><b>15.72</b></td>
+                                    <td><b>13.56</b></td>
                                     <td><b>3.95</b></td>
                                     <td><b>54.28</b></td>
                                     <td><b>49.09</b></td>
@@ -310,7 +337,7 @@
                                 <tr>
                                     <th scope="row">
                                         <p>2</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
                                     </th>
                                     <td style="word-break:break-word;">
                                         <b>HERO</b> <br/> <b>(AT->ST, FT-only)</b>
@@ -318,9 +345,9 @@
                                         <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
                                     </td>
                                     <!-- <td><b></b></td> -->
-                                    <td><b>29.74</b></td>
+                                    <td><b>29.21</b></td>
 
-                                    <td><b>14.51</b></td>
+                                    <td><b>12.40</b></td>
                                     <td><b>3.61</b></td>
                                     <td><b>50.93</b></td>
                                     <td><b>49.91</b></td>
@@ -329,7 +356,7 @@
                                 <tr>
                                     <th scope="row">
                                         <p>3</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
                                     </th>
                                     <td style="word-break:break-word;">
                                         <b>HERO</b> <br/> <b>(ST, PT+FT)</b>
@@ -337,18 +364,18 @@
                                         <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
                                     </td>
                                     <!-- <td><b></b></td> -->
-                                    <td><b>29.25</b></td>
+                                    <td><b>30.08</b></td>
 
-                                    <td><b>14.39</b></td>
-                                    <td><b>4.09</b></td>
-                                    <td><b>57.88</b></td>
-                                    <td><b>40.63</b></td>
+                                    <td><b>13.70</b></td>
+                                    <td><b>3.38</b></td>
+                                    <td><b>56.59</b></td>
+                                    <td><b>46.66</b></td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row">
                                         <p>4</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
                                     </th>
                                     <td style="word-break:break-word;">
                                         <b>HERO</b> <br/> <b>(ST, FT-only)</b>
@@ -356,12 +383,12 @@
                                         <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
                                     </td>
                                     <!-- <td><b></b></td> -->
-                                    <td><b>22.53</b></td>
+                                    <td><b>25.09</b></td>
 
-                                    <td><b>9.35</b></td>
-                                    <td><b>1.74</b></td>
-                                    <td><b>40.69</b></td>
-                                    <td><b>38.34</b></td>
+                                    <td><b>8.81</b></td>
+                                    <td><b>2.13</b></td>
+                                    <td><b>42.37</b></td>
+                                    <td><b>47.02</b></td>
                                 </tr>
                             </tbody>
                             </table>
@@ -376,17 +403,35 @@
                                 <!-- <th scope="col">Ave-Rank</th> -->
                                 <th scope="col">Ave-Score</th>
                                 <th scope="col">TVQA</th>
-                                <th scope="col">VIOLIN</th>
                                 <th scope="col">How2QA</th>
+                                <th scope="col">VIOLIN</th>
                                 <th scope="col">VLEP</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <p>-</p>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
+                                    </th>
+                                    <td style="word-break:break-word;">
+                                        <b>Human</b>
+                                        <p class="institution">VALUE baseline</p>
+                                        <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
+                                    </td>
+                                    <!-- <td><b></b></td> -->
+                                    <td><b>90.41</b></td>
+
+                                    <td><b>89.41</b></td>
+                                    <td><b>90.32</b></td>
+                                    <td><b>91.39</b></td>
+                                    <td><b>90.50</b></td>
+                                </tr>
 
                                 <tr>
                                     <th scope="row">
                                         <p>1</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
                                     </th>
                                     <td style="word-break:break-word;">
                                         <b>HERO</b> <br/> <b>(AT->ST, PT+FT)</b>
@@ -394,11 +439,11 @@
                                         <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
                                     </td>
                                     <!-- <td><b></b></td> -->
-                                    <td><b>71.46</b></td>
+                                    <td><b>71.50</b></td>
 
-                                    <td><b>74.67</b></td>
-                                    <td><b>67.18</b></td>
+                                    <td><b>74.83</b></td>
                                     <td><b>74.60</b></td>
+                                    <td><b>67.18</b></td>
                                     <td><b>69.37</b></td>
                                 </tr>
                                 
@@ -406,27 +451,7 @@
                                 <tr>
                                     <th scope="row">
                                         <p>2</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
-                                    </th>
-                                    <td style="word-break:break-word;">
-                                        <b>HERO</b> <br/> <b>(ST, PT+FT)</b>
-                                        <p class="institution">VALUE baseline</p>
-                                        <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
-                                    </td>
-                                    <!-- <td><b></b></td> -->
-                                    <td><b>70.63</b></td>
-
-                                    <td><b>73.99</b></td>
-                                    <td><b>65.31</b></td>
-                                    <td><b>74.40</b></td>
-                                    <td><b>68.11</b></td>
-                                </tr>
-                                
-
-                                <tr>
-                                    <th scope="row">
-                                        <p>3</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
                                     </th>
                                     <td style="word-break:break-word;">
                                         <b>HERO</b> <br/> <b>(AT->ST, FT-only)</b>
@@ -434,18 +459,38 @@
                                         <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
                                     </td>
                                     <!-- <td><b></b></td> -->
-                                    <td><b>70.50</b></td>
+                                    <td><b>70.44</b></td>
 
-                                    <td><b>74.63</b></td>
-                                    <td><b>66.80</b></td>
+                                    <td><b>74.38</b></td>
                                     <td><b>71.88</b></td>
+                                    <td><b>66.80</b></td>
                                     <td><b>68.68</b></td>
+                                </tr>
+                                
+
+                                <tr>
+                                    <th scope="row">
+                                        <p>3</p>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
+                                    </th>
+                                    <td style="word-break:break-word;">
+                                        <b>HERO</b> <br/> <b>(ST, PT+FT)</b>
+                                        <p class="institution">VALUE baseline</p>
+                                        <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
+                                    </td>
+                                    <!-- <td><b></b></td> -->
+                                    <td><b>69.91</b></td>
+
+                                    <td><b>74.52</b></td>
+                                    <td><b>73.82</b></td>
+                                    <td><b>64.19</b></td>
+                                    <td><b>67.10</b></td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row">
                                         <p>4</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
                                     </th>
                                     <td style="word-break:break-word;">
                                         <b>HERO</b> <br/> <b>(ST, FT-only)</b>
@@ -453,12 +498,12 @@
                                         <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
                                     </td>
                                     <!-- <td><b></b></td> -->
-                                    <td><b>65.28</b></td>
+                                    <td><b>65.50</b></td>
 
-                                    <td><b>70.42</b></td>
-                                    <td><b>63.75</b></td>
-                                    <td><b>69.00</b></td>
-                                    <td><b>57.94</b></td>
+                                    <td><b>71.35</b></td>
+                                    <td><b>69.59</b></td>
+                                    <td><b>64.30</b></td>
+                                    <td><b>56.77</b></td>
                                 </tr>
                             </tbody>
                             </table>
@@ -478,30 +523,28 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                
-
                                 <tr>
                                     <th scope="row">
-                                        <p>1</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
+                                        <p>-</p>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
                                     </th>
                                     <td style="word-break:break-word;">
-                                        <b>HERO</b> <br/> <b>(ST, PT+FT)</b>
+                                        <b>Human</b>
                                         <p class="institution">VALUE baseline</p>
                                         <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
                                     </td>
                                     <!-- <td><b></b></td> -->
-                                    <td><b>76.84</b></td>
+                                    <td><b>-</b></td>
 
-                                    <td><b>50.00</b></td>
-                                    <td><b>127.94</b></td>
-                                    <td><b>52.57</b></td>
+                                    <td><b>62.89</b></td>
+                                    <td><b>-</b></td>
+                                    <td><b>62.66</b></td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row">
-                                        <p>2</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
+                                        <p>1</p>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
                                     </th>
                                     <td style="word-break:break-word;">
                                         <b>HERO</b> <br/> <b>(AT->ST, PT+FT)</b>
@@ -509,18 +552,36 @@
                                         <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
                                     </td>
                                     <!-- <td><b></b></td> -->
-                                    <td><b>75.69</b></td>
+                                    <td><b>75.52</b></td>
 
-                                    <td><b>48.63</b></td>
+                                    <td><b>48.13</b></td>
                                     <td><b>121.89</b></td>
                                     <td><b>56.54</b></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        <p>1</p>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
+                                    </th>
+                                    <td style="word-break:break-word;">
+                                        <b>HERO</b> <br/> <b>(ST, PT+FT)</b>
+                                        <p class="institution">VALUE baseline</p>
+                                        <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
+                                    </td>
+                                    <!-- <td><b></b></td> -->
+                                    <td><b>75.52</b></td>
+
+                                    <td><b>51.04</b></td>
+                                    <td><b>120.22</b></td>
+                                    <td><b>55.30</b></td>
                                 </tr>
                                 
 
                                 <tr>
                                     <th scope="row">
                                         <p>3</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
                                     </th>
                                     <td style="word-break:break-word;">
                                         <b>HERO</b> <br/> <b>(AT->ST, FT-only)</b>
@@ -528,9 +589,9 @@
                                         <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
                                     </td>
                                     <!-- <td><b></b></td> -->
-                                    <td><b>73.10</b></td>
+                                    <td><b>72.71</b></td>
 
-                                    <td><b>50.58</b></td>
+                                    <td><b>49.41</b></td>
                                     <td><b>110.63</b></td>
                                     <td><b>58.09</b></td>
                                 </tr>
@@ -538,7 +599,7 @@
                                 <tr>
                                     <th scope="row">
                                         <p>4</p>
-                                        <span class="date badge badge-secondary">05/30/2021</span>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
                                     </th>
                                     <td style="word-break:break-word;">
                                         <b>HERO</b> <br/> <b>(ST, FT-only)</b>
@@ -546,11 +607,11 @@
                                         <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
                                     </td>
                                     <!-- <td><b></b></td> -->
-                                    <td><b>68.96</b></td>
+                                    <td><b>72.06</b></td>
 
-                                    <td><b>48.48</b></td>
-                                    <td><b>106.24</b></td>
-                                    <td><b>52.16</b></td>
+                                    <td><b>50.30</b></td>
+                                    <td><b>109.89</b></td>
+                                    <td><b>55.98</b></td>
                                 </tr>
                             </tbody>
                             </table>
