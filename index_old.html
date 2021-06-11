@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/15106f0a68.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>VALUE</title>
+        <meta name="description" content="VALUE is a evaluation benchmark built on 11 datasets across 3 tasks with the focus on multi-channel videos (video+subtitle) for Video-And-Language Understanding Evaluation">
+        <meta name="keywords" content="Video-and-Language Benchmark, Multi-channel Video, Video+Subtitle, Video Retrieval, Video Question Answering, Video Captioning,Video Description">
+        <meta name="author" content="VALUE">
+        <script type="application/ld+json">
+            {
+                "@context":"https://schema.org/",
+                "@type":"Dataset",
+                "name":"VALUE Benchmark",
+                "description":"A Comprehensive Benchmark for Video-And-Language Understanding Evaluation.",
+                "url":"https://value-leaderboard.github.io/",
+                "keywords":[
+                   "MACHINE LEARNING > VIDEO RETRIEVAL",
+                   "MACHINE LEARNING > VIDEO CAPTIONING",
+                   "MACHINE LEARNING > VIDEO QUESTION ANSWERING"
+                ],
+                "license" : "https://github.com/VALUE-Leaderboard/DataRelease/blob/main/DATA.md#license",
+                "isAccessibleForFree" : true,
+                "hasPart" : [
+                  {
+                    "@type": "Dataset",
+                    "name": "TVQA",
+                    "description": "Video question answering dataset based on 6 popular TV shows",
+                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                    "creator":{
+                       "@type":"Organization",
+                       "name": "University of North Carolina at Chapel Hill"
+                    }
+                  },
+                  {
+                    "@type": "Dataset",
+                    "name": "TVR",
+                    "description": "Video moment retrieval dataset based on 6 popular TV shows",
+                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                    "creator":{
+                       "@type":"Organization",
+                       "name": "University of North Carolina at Chapel Hill"
+                    }
+                  },
+                  {
+                    "@type": "Dataset",
+                    "name": "TVC",
+                    "description": "Video captioning dataset based on 6 popular TV shows",
+                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                    "creator":{
+                       "@type":"Organization",
+                       "name": "University of North Carolina at Chapel Hill"
+                    }
+                  }, 
+                  {
+                    "@type": "Dataset",
+                    "name": "VLEP",
+                    "description": "Video event prediction dataset based on TV show and YouTube Vlog videos",
+                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                    "creator":{
+                       "@type":"Organization",
+                       "name": "University of North Carolina at Chapel Hill"
+                    }
+                  },                  
+                  {
+                    "@type": "Dataset",
+                    "name": "VIOLIN",
+                    "description": "Video-and-language inference dataset based on TV show and movie videos",
+                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                    "creator":{
+                       "@type":"Organization",
+                       "name": "CMU and Microsoft"
+                    }
+                  },     
+                  {
+                    "@type": "Dataset",
+                    "name": "How2R",
+                    "description": "Video moment retrieval dataset based on YouTube videos",
+                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                    "creator":{
+                       "@type":"Organization",
+                       "name": "Microsoft"
+                    }
+                  },    
+                  {
+                    "@type": "Dataset",
+                    "name": "How2QA",
+                    "description": "Video question answering dataset based on YouTube videos",
+                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                    "creator":{
+                       "@type":"Organization",
+                       "name": "Microsoft"
+                    }
+                  },        
+                  {
+                    "@type": "Dataset",
+                    "name": "YouCookII",
+                    "description": "Video captioning and retrieval dataset based on YouTube cooking videos",
+                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                    "creator":{
+                       "@type":"Organization",
+                       "name": "University of Michigan, Ann Arbor"
+                    }
+                  },        
+                  {
+                    "@type": "Dataset",
+                    "name": "VATEX",
+                    "description": "Video captioning and retrieval dataset based on YouTube videos",
+                    "license" : "https://creativecommons.org/licenses/by/4.0/",
+                    "creator":{
+                       "@type":"Organization",
+                       "name": "University of California, Santa Barbara and ByteDance AI Lab"
+                    }
+                  }                                   
+                ],
+                "distribution":[
+                   {
+                      "@type":"DataDownload",
+                      "contentUrl":"https://github.com/VALUE-Leaderboard/DataRelease"
+                   }
+                ]
+              }
+        </script>        
+
+
+        <link rel="icon" href="image/favicon.ico">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><b>VALUE</b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#content" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="content">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/VALUE-Leaderboard/StarterCode" target="_blank">Code</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/VALUE-Leaderboard/DataRelease" target="_blank">Download</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tasks.html">Tasks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="challenge_2021.html">Challenge</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="submission.html">Submission</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://arxiv.org/pdf/2106.04632.pdf" target="_blank">Paper</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="people.html">People</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <div class="container">
+            <h1 class="display-5 sharepoint-dark-blue">Meet VALUE!</h1>
+            <p class="lead sharepoint-dark-blue">A Comprehensive Benchmark for <b>V</b>ideo-<b>A</b>nd-<b>L</b>anguage <b>U</b>nderstanding <b>E</b>valuation.</p>
+            </div>
+        </div>
+
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h4>Why VALUE?</h4>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumb">
+                    <div class="card">
+                        <div class="card-body">
+                            <center><span class="fa-4x ms-blue">
+                                <!-- <i class="fas fa-video"></i> -->
+                                <i class="fas fa-photo-video"></i>
+                                <i class="far fa-closed-captioning"></i>
+                            </span></center>
+                            
+                            <!-- <img src="image/multilingual.png" class="center" style="height:6rem; width:6rem;"/> -->
+                            <br/>
+                            <center><h5 class="card-title">Multi-channel Video</h5>
+                            <p class="card-text"><font size="3rem">With both <b>Video Frames</b> and <b>Subtitle/ASR</b></font></p></center>
+                            <br/>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumb">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- <img src="image/coverage.png" class="center" style="height:6rem; width:6rem;"/>
+                            <br/> -->
+                            <center><span class="fa-4x">
+                                <i class="fab fa-youtube youtube-red"></i>
+                                <i class="fas fa-tv ms-blue"></i>
+                                <i class="fas fa-film ms-blue"></i>
+                            </span></center>
+                            <br/>
+                            <center><h5 class="card-title">Diverse Video Domain</h5>
+                            <p class="card-text"><font size="3rem">Diverse video content from <b>YouTube</b>, <b>TV Episodes</b> and <b>Movie Clips</b></font></p></center>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumb">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- <img src="image/largescale.png" class="center" style="height:6rem; width:6rem;"/> -->
+                            <center>
+                                <!-- <span class="fa-4x"> -->
+                                <!-- <i class="fas fa-search ms-blue"></i> -->
+                                <img src="image/retrieval.png" style="height:5rem;"/>
+                                <img src="image/qa.png" style="height:5rem;"/>
+                                <img src="image/caption.png" style="height:5rem;"/>
+                                <!-- <i class="fas fa-video ms-blue"></i>
+                                <i class="fas fa-language ms-blue"></i> -->
+                            <!-- </span> -->
+                            </center>
+                            <br/>
+                            <center><h5 class="card-title">Various Datasets over Representative Tasks</h5>
+                            <p class="card-text"><font size="3rem"><b>11</b> datasets over <b>3</b> tasks: <b>Retrieval</b>, <b>Question Answering</b> and <b>Captioning</b>.</font></p></center>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumb">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="image/trophy.png" class="center" style="height:5rem; width:6rem;"/>
+                            <!-- <center><span class="fa-4x" style="margin-bottom: -4px;">
+                                <i class="fas fa-trophy ms-blue"></i>
+                            </span></center> -->
+                            <br/>
+                            <center><h5 class="card-title">Leaderboard!</h5>
+                            <p class="card-text"><font size="3rem">To track the advances in Video-and-Langauge research.</font></p></center>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h4>What is VALUE?</h4>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">                
+                    <p>The <b>V</b>ideo-<b>A</b>nd-<b>L</b>anguage <b>U</b>nderstanding <b>E</b>valuation (VALUE) benchmark is a collection of resources for training, evaluating, and analyzing systems for understanding both video and subtitles. VALUE consists of: </p>
+                    <ul>
+                        <li>A benchmark of 11 video and language tasks built on established existing datasets and selected to cover a diverse range of dataset sizes, video genres, degrees of difficulty and task types</li>
+                        <li>A public leaderboard for tracking performance on the benchmark</li>
+                    </ul>
+                        
+                    <p>The format of the VALUE benchmark is model-agnostic, so any system capable of processing multi-channel video (video+subtitle) + natural langugage sentence pairs and producing corresponding predictions is eligible to participate. The ultimate goal of VALUE is to drive research in the development of general and robust video+language understanding systems.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h4>Paper</h4>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <a href="https://arxiv.org/abs/1904.03493" target="_blank">
+                        <img src="image/paper.png" class="rounded img-fluid mx-auto d-block" border="5"/>
+                    </a>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                        <h6>Please cite our paper as below if you use the VALUE benchmark or starter code.</h6>
+                        <pre><code>
+@InProceedings{Wang_2019_ICCV,
+author = {Wang, Xin and Wu, Jiawei and Chen, Junkun and Li, Lei and Wang, Yuan-Fang and Wang, William Yang},
+title = {VaTeX: A Large-Scale, High-Quality Multilingual Dataset for Video-and-Language Research},
+booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+month = {October},
+year = {2019}
+} 
+                        </code></pre>
+                    </details>
+                </div>
+            </div>
+
+        </div>-->
+
+        <br/>
+
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h4>Contact</h4>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <a href="https://github.com/VALUE-Leaderboard/VALUE-Leaderboard.github.io/issues" target="_blank">
+                        <!-- <img src="image/mail.png" class="center" style="height:5rem; width:5rem;"/>
+                         -->
+                         <center><span class="fa-4x ms-blue">
+                            <i class="far fa-envelope"></i>
+                        </span></center>
+                    </a>
+                    <br/>
+                    <center><h6>Have any questions or suggestions? Feel free to submit an issue to <a href="https://github.com/VALUE-Leaderboard/VALUE-Leaderboard.github.io">our GitHub repository</a>!</h6></center>
+                </div>
+            </div>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/sorttable.js"></script>
+    </body>
+</html>
