@@ -2,11 +2,12 @@
 https://value-benchmark.github.io/
 
 # Show your results on our leaderboard
-If you wish to show your results on our leaderboard, please follow the below template to submit an issue to this repo or email us at value-benchmark@googlegroups.com.
+If you wish to show your results on our leaderboard, please follow the below template to email us at value-benchmark@googlegroups.com.
 
 ```json
 {
   "date": "06/07/2021",
+  "codaLab username": "",
   "model": "HERO (AT->ST, PT+FT)",
   "institution": "VALUE baseline",
   "paper_link": "",
@@ -29,7 +30,7 @@ If you wish to show your results on our leaderboard, please follow the below tem
   "caption_leaderboard": true
  }
 ```
-- All scores are obtained from CodaLab evaluation.
+- All scores are obtained from CodaLab evaluation, make sure your codaLab username is correct.
 - For retrieval tasks, please report AveR. For captioning tasks, please report CiDER scores.
 - For any missing scores, set as `null`.
 - `value_leaderboard`, `retrieval_leaderboard`, `qa_leaderboard`, `caption_leaderboard` are set to be `true`, 
