@@ -2,7 +2,7 @@
 https://value-benchmark.github.io/
 
 # Show your results on our leaderboard
-If you wish to show your results on our leaderboard, please follow the below template to submit an issue or email us at value-benchmark@googlegroups.com.
+If you wish to show your results on our leaderboard, please follow the below template to submit an issue to this repo or email us at value-benchmark@googlegroups.com.
 
 ```json
 {
