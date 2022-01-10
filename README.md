@@ -27,7 +27,8 @@ If you wish to show your results on our leaderboard, please follow the below tem
   "value_leaderboard": true,
   "retrieval_leaderboard": true,
   "qa_leaderboard": true,
-  "caption_leaderboard": true
+  "caption_leaderboard": true,
+  "is_ensemble": false 
  }
 ```
 - All scores are obtained from CodaLab evaluation, make sure your codaLab username is correct.
@@ -37,3 +38,4 @@ If you wish to show your results on our leaderboard, please follow the below tem
    if you wish to show your results on each of the corresponding leaderboards.
 - `institution` can be anonymous.
 - `paper_link` and `code_link` are optinal.
+- `is_emsemble` it is mendatory to share whether your results are from an ensemble model. If yes, sharing best single model results is highly encouraged.
